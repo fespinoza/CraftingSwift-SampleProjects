@@ -1,0 +1,95 @@
+import Foundation
+import FactoryKit
+import SwiftUI
+
+private extension Container {
+    var socialClient: Factory<PostSocialNetworkingClient> {
+        self { .live() }
+    }
+
+    var showLikesCount: Factory<Bool> {
+        self { true }
+    }
+}
+
+enum DependencyInjection_Factory {
+    struct LikeButton: View {
+        @State var viewModel: LikeButtonViewModel
+        @Injected(\.showLikesCount) private var showLikesCount
+
+        init(post: Post) {
+            self._viewModel = .init(initialValue: .init(post: post))
+        }
+
+        var body: some View {
+            HStack {
+                Button(action: toggleLike) {
+                    Text(viewModel.liked ? "Liked" : "Like")
+                }
+
+                if showLikesCount {
+                    Text(viewModel.likeCountDescription)
+                }
+            }
+        }
+
+        func toggleLike() {
+            Task { await viewModel.toggleLike() }
+        }
+    }
+
+    @Observable
+    class LikeButtonViewModel {
+        let postID: Post.ID
+        var liked: Bool
+        var likeCount: Int
+
+        @ObservationIgnored @Injected(\.socialClient) private var socialClient
+
+        var likeCountDescription: String {
+            "\(likeCount) likes"
+        }
+
+        init(post: Post) {
+            self.postID = post.id
+            self.liked = post.liked
+            self.likeCount = post.likeCount
+        }
+
+        func toggleLike() async {
+            let value = liked
+            likeCount += 1
+
+            do {
+                liked.toggle()
+                if value {
+                    try await socialClient.removeLike(postID)
+                } else {
+                    try await socialClient.addLike(postID)
+                }
+            } catch {
+                liked = value
+                likeCount -= 1
+                print("request failed, reverting back to previous state")
+            }
+        }
+    }
+
+//    @Suite
+//    struct LikeButtonViewModelTests {
+//        @Test
+//        func `on a failed like request, the state should be reverted`() async throws {
+//            Container.shared.socialClient.register {
+//                PostSocialNetworkingClient.test(
+//                    addLike: { _ in throw NSError(domain: "Something went wrong", code: 0) }
+//                )
+//            }
+//
+//            let viewModel = LikeButtonViewModel(post: .previewValue(liked: false, likeCount: 3))
+//
+//            await viewModel.toggleLike()
+//
+//            #expect(viewModel.likeCount == 3 && !viewModel.liked, "The state didn't change because the request failed")
+//        }
+//    }
+}
