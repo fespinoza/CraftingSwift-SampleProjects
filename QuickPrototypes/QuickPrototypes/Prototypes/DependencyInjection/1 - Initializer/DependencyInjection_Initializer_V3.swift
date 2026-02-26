@@ -3,11 +3,6 @@ import SwiftUI
 //import Testing
 
 enum DependencyInjection_Initializer_V3 {
-    struct Post: Decodable {
-        let title: String
-        let body: String
-    }
-
     struct HttpClient {
         static func fetchPosts() async throws -> [Post] {
             fatalError("❌ not implemented... this talks to a backend API")
@@ -24,12 +19,31 @@ enum DependencyInjection_Initializer_V3 {
         }
     }
 
+    struct PostListView: View {
+        @State var viewModel: PostListViewModel = .init()
+
+        var body: some View {
+            List(viewModel.posts) { post in
+                PostItemView(post: post)
+            }
+            .task { await viewModel.loadData() }
+        }
+    }
+
+    struct PostItemView: View {
+        let post: Post
+        
+        var body: some View {
+            Text(post.title)
+        }
+    }
+
 @MainActor
 @Observable
 class PostListViewModel {
     var posts: [Post]
-    let fetchPosts: () async throws -> [Post]
-    let analytics: AnalyticsProvider
+    private let fetchPosts: () async throws -> [Post]
+    private let analytics: AnalyticsProvider
 
     init(
         fetchPosts: @escaping () async throws -> [Post] = HttpClient.fetchPosts,

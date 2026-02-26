@@ -42,6 +42,32 @@ enum DependencyInjection_Environment {
         }
     }
 
+    struct PostListView: View {
+        @State var posts: [Post] = []
+        @Environment(\.httpClient) private var httpClient
+
+        var body: some View {
+            List(posts) { post in
+                PostItemView(post: post)
+            }
+            .task {
+                do {
+                    posts = try await httpClient.fetchPosts()
+                } catch {
+                    print("error loading posts")
+                }
+            }
+        }
+    }
+
+    #Preview {
+        PostListView()
+            .environment(\.httpClient, .test(fetchPosts: {
+                try Task.sleep(for: .seconds(2))
+                return [.previewValue(), .previewValue()]
+            }))
+    }
+
     struct PostItemView: View {
         let post: Post
 
