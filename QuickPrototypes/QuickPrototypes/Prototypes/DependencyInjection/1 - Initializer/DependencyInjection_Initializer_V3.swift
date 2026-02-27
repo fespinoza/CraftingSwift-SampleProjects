@@ -19,24 +19,41 @@ enum DependencyInjection_Initializer_V3 {
         }
     }
 
-    struct PostListView: View {
-        @State var viewModel: PostListViewModel = .init()
+    struct PostListScreen: View {
+        let showLikesCount: Bool
 
         var body: some View {
-            List(viewModel.posts) { post in
-                PostItemView(post: post)
+            NavigationStack {
+                PostListView(showLikesCount: showLikesCount)
+                    .navigationTitle("Posts")
             }
-            .task { await viewModel.loadData() }
         }
     }
 
-    struct PostItemView: View {
-        let post: Post
-        
-        var body: some View {
-            Text(post.title)
+struct PostListView: View {
+    @State var viewModel: PostListViewModel = .init()
+    let showLikesCount: Bool
+
+    var body: some View {
+        List(viewModel.posts) { post in
+            PostItemView(post: post, showLikesCount: showLikesCount)
+        }
+        .task { await viewModel.loadData() }
+    }
+}
+
+struct PostItemView: View {
+    let post: Post
+    let showLikesCount: Bool
+
+    var body: some View {
+        Text(post.title)
+
+        if showLikesCount {
+            Text("\(post.likeCount) likes")
         }
     }
+}
 
 @MainActor
 @Observable

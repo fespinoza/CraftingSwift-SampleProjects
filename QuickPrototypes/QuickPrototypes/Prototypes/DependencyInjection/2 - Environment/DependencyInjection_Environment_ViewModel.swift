@@ -5,6 +5,7 @@ import SwiftUI
 private extension EnvironmentValues {
     @Entry var socialClient: PostSocialNetworkingClient = .live()
     @Entry var showLikesCount: Bool = true
+    @Entry var httpClient: HttpClient = .live()
 }
 
 enum DependencyInjection_Environment_ViewModel {
@@ -24,6 +25,66 @@ enum DependencyInjection_Environment_ViewModel {
             }
         }
     }
+
+    struct PostListView: View {
+        @State var viewModel: PostListViewModel = .init()
+        @Environment(\.httpClient) var httpClient
+
+        var body: some View {
+            List(viewModel.posts) { post in
+                PostItemView(post: post)
+            }
+            .task {
+                // awkward
+                viewModel.fetchPosts = httpClient.fetchPosts
+                await viewModel.loadData()
+            }
+        }
+    }
+
+    struct AltPostListView: View {
+        @State var viewModel: PostListViewModel = .init()
+
+        var body: some View {
+            List(viewModel.posts) { post in
+                PostItemView(post: post)
+            }
+            .task {
+                await viewModel.loadData()
+            }
+        }
+    }
+
+    struct HttpClientReader: View {
+        @Environment(\.httpClient) var httpClient
+
+        var body: some View {
+            AltPostListView(viewModel: .init(fetchPosts: httpClient.fetchPosts))
+        }
+    }
+
+@MainActor
+@Observable
+class PostListViewModel {
+    var posts: [Post]
+    var fetchPosts: (() async throws -> [Post])?
+
+    init(
+        fetchPosts: (() async throws -> [Post])? = nil
+    ) {
+        self.posts = []
+        self.fetchPosts = fetchPosts
+    }
+
+    func loadData() async {
+        guard let fetchPosts else { return }
+        do {
+            posts = try await fetchPosts()
+        } catch {
+            print(error.localizedDescription)
+        }
+    }
+}
 
     @Observable
     class LikeButtonViewModel {

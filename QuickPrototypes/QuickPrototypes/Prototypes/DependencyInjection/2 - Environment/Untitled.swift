@@ -2,56 +2,27 @@ import Foundation
 import SwiftUI
 //import Testing
 
-struct HttpClient {
-    let fetchPosts: () async throws -> [Post]
-
-    init(
-        fetchPosts: @escaping () async throws -> [Post]
-    ) {
-        self.fetchPosts = fetchPosts
-    }
-
-    static func live() -> HttpClient {
-        .init(
-            fetchPosts: {
-                let request = try NetworkUtilities.makeRequest(method: "GET", to: "/posts")
-                let (data, _) = try await URLSession.shared.data(for: request)
-                // assuming the request had a 200 status code
-                return try JSONDecoder().decode([Post].self, from: data)
-            }
-        )
-    }
-
-    static func test(
-        fetchPosts: @escaping () async throws -> [Post] = { [] }
-    ) -> HttpClient {
-        .init(fetchPosts: fetchPosts)
-    }
-}
-
 private extension EnvironmentValues {
     @Entry var socialClient: DependencyInjection_Environment.PostSocialNetworkingClient = .live
     @Entry var httpClient: HttpClient = .live()
     @Entry var showLikesCount: Bool = true
 }
 
-enum DependencyInjection_Environment {
+enum DependencyInjection_Environment_V0 {
     struct HttpClient {
         static func fetchPosts() async throws -> [Post] {
             fatalError("❌ not implemented... this talks to a backend API")
         }
     }
 
-    // NEXT: PostListScreen
-    // shows the advantage of this approach
-struct PostListScreen: View {
-    var body: some View {
-        NavigationStack {
-            PostListView()
-                .navigationTitle("Posts")
+    struct PostListScreen: View {
+        var body: some View {
+            NavigationStack {
+                PostListView()
+                    .navigationTitle("Posts")
+            }
         }
     }
-}
 
 struct PostListView: View {
     @State var posts: [Post] = []
@@ -59,19 +30,11 @@ struct PostListView: View {
     @Environment(\.httpClient) private var httpClient
 
     var body: some View {
-        Group {
-            if isLoading {
-                ProgressView()
-            } else {
-                List(posts) { post in
-                    PostItemView(post: post)
-                }
-            }
+        List(posts) { post in
+            PostItemView(post: post)
         }
         .task {
-            defer { isLoading = false }
             do {
-                isLoading = true
                 posts = try await httpClient.fetchPosts()
             } catch {
                 print("error loading posts")
@@ -147,7 +110,7 @@ struct PostListView: View {
                 }
             }
         }
-        
+
         func toggleLike() {
             Task {
                 let value = liked
