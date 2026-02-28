@@ -8,6 +8,8 @@ private extension EnvironmentValues {
     @Entry var httpClient: HttpClient = .live()
 }
 
+// NEXT: what the environment falls short for?
+
 enum DependencyInjection_Environment_ViewModel {
     struct HttpClient {
         static func fetchPosts() async throws -> [Post] {
