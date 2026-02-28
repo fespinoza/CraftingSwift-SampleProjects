@@ -2,6 +2,16 @@ import Foundation
 import FactoryKit
 import SwiftUI
 
+private nonisolated class AnalyticsProvider {
+    init() {}
+
+    static let shared: AnalyticsProvider = .init()
+
+    func track(eventName: String) {
+        print("perform tracking of event \(eventName)...")
+    }
+}
+
 private extension Container {
     var socialClient: Factory<PostSocialNetworkingClient> {
         self { .live() }
@@ -10,9 +20,40 @@ private extension Container {
     var showLikesCount: Factory<Bool> {
         self { true }
     }
+
+    var httpClient: Factory<HttpClient> {
+        self { .live() }
+    }
+
+    var analyticsProvider: Factory<AnalyticsProvider> {
+        self { .shared } // !!!
+    }
 }
 
 enum DependencyInjection_Factory {
+
+
+@MainActor
+@Observable
+class PostListViewModel {
+    var posts: [Post] = []
+    @ObservationIgnored @Injected(\.httpClient) private var httpClient
+    @ObservationIgnored @Injected(\.analyticsProvider) private var analytics
+
+    init() {}
+
+    func loadData() async {
+        do {
+            posts = try await httpClient.fetchPosts()
+            analytics.track(eventName: "Loaded Posts")
+        } catch {
+            analytics.track(eventName: "Failed to Load Posts")
+            print(error.localizedDescription)
+        }
+    }
+}
+
+
     struct LikeButton: View {
         @State var viewModel: LikeButtonViewModel
         @Injected(\.showLikesCount) private var showLikesCount

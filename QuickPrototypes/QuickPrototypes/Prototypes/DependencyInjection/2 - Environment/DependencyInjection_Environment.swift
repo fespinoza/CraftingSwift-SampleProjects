@@ -2,7 +2,7 @@ import Foundation
 import SwiftUI
 //import Testing
 
-struct HttpClient {
+nonisolated struct HttpClient {
     let fetchPosts: () async throws -> [Post]
 
     init(
@@ -92,6 +92,7 @@ struct PostListView: View {
                     .monospacedDigit()
                     .frame(maxWidth: .infinity, alignment: .trailing)
             }
+            .environment(\.showLikesCount, false)
         }
     }
 
