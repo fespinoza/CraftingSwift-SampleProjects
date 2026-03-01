@@ -28,21 +28,21 @@ enum DependencyInjection_Environment_ViewModel {
         }
     }
 
-    struct PostListView: View {
-        @State var viewModel: PostListViewModel = .init()
-        @Environment(\.httpClient) var httpClient
+struct PostListView: View {
+    @State var viewModel: PostListViewModel = .init()
+    @Environment(\.httpClient) var httpClient
 
-        var body: some View {
-            List(viewModel.posts) { post in
-                PostItemView(post: post)
-            }
-            .task {
-                // awkward
-                viewModel.fetchPosts = httpClient.fetchPosts
-                await viewModel.loadData()
-            }
+    var body: some View {
+        List(viewModel.posts) { post in
+            PostItemView(post: post)
+        }
+        .task {
+            // awkward
+            viewModel.fetchPosts = httpClient.fetchPosts
+            await viewModel.loadData()
         }
     }
+}
 
     struct AltPostListView: View {
         @State var viewModel: PostListViewModel = .init()

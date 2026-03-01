@@ -26,7 +26,7 @@ private extension Container {
     }
 
     var analyticsProvider: Factory<AnalyticsProvider> {
-        self { .shared } // !!!
+        self { .init() }
     }
 }
 
@@ -53,6 +53,18 @@ class PostListViewModel {
     }
 }
 
+struct PostItemView: View {
+    let post: Post
+    @Injected(\.showLikesCount) var showLikesCount
+
+    var body: some View {
+        Text(post.title)
+
+        if showLikesCount {
+            Text("\(post.likeCount) likes")
+        }
+    }
+}
 
     struct LikeButton: View {
         @State var viewModel: LikeButtonViewModel
@@ -116,21 +128,19 @@ class PostListViewModel {
         }
     }
 
-//    @Suite
-//    struct LikeButtonViewModelTests {
-//        @Test
-//        func `on a failed like request, the state should be reverted`() async throws {
-//            Container.shared.socialClient.register {
-//                PostSocialNetworkingClient.test(
-//                    addLike: { _ in throw NSError(domain: "Something went wrong", code: 0) }
-//                )
-//            }
-//
-//            let viewModel = LikeButtonViewModel(post: .previewValue(liked: false, likeCount: 3))
-//
-//            await viewModel.toggleLike()
-//
-//            #expect(viewModel.likeCount == 3 && !viewModel.liked, "The state didn't change because the request failed")
+//@Suite
+//struct PostListViewModelTests {
+//    @Test
+//    func `on load data we trigger the request to fetch the posts`() async throws {
+//        Container.shared.httpClient.register {
+//            .test { @MainActor in [.previewValue(), .previewValue()] }
 //        }
+//
+//        let viewModel = PostListViewModel()
+//
+//        await viewModel.loadData()
+//
+//        #expect(viewModel.posts.count == 2, "The posts should have been present")
 //    }
+//}
 }
