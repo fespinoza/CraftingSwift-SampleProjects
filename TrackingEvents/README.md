@@ -1,5 +1,7 @@
 # Tracking Events
 
+This is the sample code for my blog post: https://craftingswift.dev/articles/syncing-ios-and-android-tracking-events
+
 This is a full example on how we sync iOS and Android analytics for [SATS](https://sats.no).
 
 This example has 2 folders, which in our real setup are two different repos.
