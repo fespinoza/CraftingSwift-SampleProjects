@@ -1,0 +1,24 @@
+---
+tracking_locations:
+  - id: activity
+  - id: home
+  - id: android_quick_settings
+    platforms:
+      - android
+  - &check_in_intent
+    id: check_in_intent
+    platforms:
+      - ios
+    description: "Specific App Intent for iOS"
+
+tracking_events:
+  - name: switch_to_find_club_map
+  - name: open_club_profile
+    parameters:
+      - club_name
+  - name: test_event_with_params
+    default_location: *check_in_intent
+    platforms:
+      - ios
+    parameters:
+      - is_this_true
