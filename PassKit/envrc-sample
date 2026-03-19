@@ -1,0 +1,4 @@
+export PASS_TYPE_ID="pass.dev.craftingswift.youtube.passkit"
+export SERIAL_NUMBER="12345678"
+export TEAM_ID="XXXXXXXXXX"
+export ORGANIZATION_NAME="My Organization Name"
