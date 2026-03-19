@@ -27,8 +27,8 @@ cat > "${PASSDIR}/pass.json" <<JSON
   "organizationName": "$ORGANIZATION_NAME",
   "description": "Crafting Swift PassKit Example",
   "foregroundColor": "rgb(255,255,255)",
-  "backgroundColor": "rgb(24,7,45)",
-  "labelColor": "rgb(236,112,50)",
+  "backgroundColor": "rgb(31, 2, 62)",
+  "labelColor": "rgb(243, 177, 112)",
   "barcode": {
     "format": "PKBarcodeFormatQR",
     "message": "https://www.youtube.com/@CraftingSwift",
@@ -42,8 +42,8 @@ cat > "${PASSDIR}/pass.json" <<JSON
             "value": "Felipe"
         },
         {
-            "key": "memberNumber",
-            "label": "Member Number",
+            "key": "developerNumber",
+            "label": "Developer Number",
             "value": "7337"
         }
     ],
