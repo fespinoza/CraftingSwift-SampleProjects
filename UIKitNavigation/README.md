@@ -7,3 +7,13 @@ and I haven't done it in quite a while. Then this code **is not how I would writ
 for illustration purposes.
 
 The idea is to explore how to style the `UINavigationBar` in different scenarios.
+
+## Videos
+
+Here are the videos that use this code base.
+
+### 1. [Styling the navigation bar on iOS with UIKit](https://www.youtube.com/watch?v=NtmA7o3hmhI)
+
+<img src="https://i.ytimg.com/vi/NtmA7o3hmhI/maxresdefault.jpg" width="400" />
+
+[Code at this point in time](https://github.com/fespinoza/Youtube-SampleProjects/tree/uikit-navigation)
