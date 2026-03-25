@@ -1,4 +1,8 @@
-# README
+# PassKit
+
+A sample script to create a PassKit Pass to import to Apple Wallet, showing the required fields, files and how to create a valid pass output.
+
+## Usage
 
 Make sure you have the following files in this folder
 
