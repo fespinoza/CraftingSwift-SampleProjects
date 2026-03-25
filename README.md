@@ -21,6 +21,10 @@ A match-score Live Activity demo built with ActivityKit, WidgetKit, reusable UI 
 
 A SwiftUI movie browsing app used to explore previews and testing, navigation, and modularization with a more production-style structure.
 
+### [PassKit](./PassKit)
+
+A sample script to create a PassKit Pass to import to Apple Wallet, showing the required fields, files and how to create a valid pass output.
+
 ### [QuickPrototypes](./QuickPrototypes/README.md)
 
 A scratchpad app for UI experiments, currently focused on recreating Slack's iOS navigation bar in SwiftUI.
