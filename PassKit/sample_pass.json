@@ -1,0 +1,47 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.dev.craftingswift.youtube.passkit",
+  "serialNumber": "12345678",
+  
+  "teamIdentifier": "XXXXXXXXXX",
+  "organizationName": "My Organization Name",
+  
+  "description": "Crafting Swift PassKit Example",
+
+  "foregroundColor": "rgb(255,255,255)",
+  "backgroundColor": "rgb(31, 2, 62)",
+  "labelColor": "rgb(243, 177, 112)",
+
+  "barcode": {
+    "format": "PKBarcodeFormatQR",
+    "message": "https://www.youtube.com/@CraftingSwift",
+    "messageEncoding": "iso-8859-1"
+  },
+
+  "storeCard": {
+    "auxiliaryFields": [
+      {
+            "key": "memberName",
+            "label": "Name",
+            "value": "Felipe"
+        },
+        {
+            "key": "developerNumber",
+            "label": "Developer Number",
+            "value": "7337"
+        }
+    ],
+    "backFields": [
+        {
+            "key": "customer-service",
+            "label": "Customer service",
+            "value": "(800) 555-5555"
+        },
+        {
+            "key": "terms",
+            "label": "Membership Terms and Conditions",
+            "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        }
+    ]
+  }
+}

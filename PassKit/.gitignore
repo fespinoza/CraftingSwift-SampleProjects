@@ -1,0 +1,9 @@
+test.pass/manifest.json
+test.pass/signature
+test.pass/pass.json
+pass_type.pem
+pass_type.cer
+pass_type_private.key
+pass_type_cert_request.csr
+wwdr.pem
+AppleWWDRCAG4.cer
