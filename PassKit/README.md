@@ -28,3 +28,14 @@ If it can be added to the wallet, it's all valid.
 - pass_type_private.key: the key for the above certificate
 - wwdr.pem: a `.pem` version of the apple `AppleWWDRCAG4.cer` certificate downloaded from https://developer.apple.com/support/expiration/
     - result of `openssl x509 -inform DER -in AppleWWDRCAG*.cer -out wwdr.pem`
+
+
+## Videos
+
+Here are the videos that use this code base.
+
+### 1. [PassKit Explained: Build Your First Apple Wallet Pass](https://www.youtube.com/watch?v=7no03wt--U4)
+
+<img src="https://i.ytimg.com/vi/7no03wt--U4/maxresdefault.jpg" width="400" />
+
+[Code at this point in time](https://github.com/fespinoza/CraftingSwift-SampleProjects/tree/video/passkit)
