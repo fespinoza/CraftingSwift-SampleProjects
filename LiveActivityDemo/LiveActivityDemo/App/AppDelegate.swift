@@ -6,10 +6,6 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         didFinishLaunchingWithOptions _: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
         application.registerForRemoteNotifications()
-
-        ContentView.listenForTokenToStartActivityViaPush()
-        ContentView.listenForTokenToUpdateActivityViaPush()
-
         return true
     }
 

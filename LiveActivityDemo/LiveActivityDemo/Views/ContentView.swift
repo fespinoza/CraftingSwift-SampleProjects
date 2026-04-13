@@ -60,6 +60,8 @@ struct ContentView: View {
         .padding()
         .navigationTitle("Live Activity Demo")
         .task { await requestPushPermissions() }
+        .task { await listenForTokenToStartActivityViaPush() }
+        .task { await listenForTokenToUpdateActivityViaPush() }
     }
 
     func refreshActivities() {
@@ -78,30 +80,26 @@ struct ContentView: View {
         }
     }
 
-    static func listenForTokenToStartActivityViaPush() {
-        Task {
-            for await pushToken in Activity<ScoreActivityAttributes>.pushToStartTokenUpdates {
-                let pushTokenString = pushToken.reduce("") { $0 + String(format: "%02x", $1) }
-                print("=== [START] ScoreActivityAttributes: \(pushTokenString)")
-            }
+    func listenForTokenToStartActivityViaPush() async {
+        for await pushToken in Activity<ScoreActivityAttributes>.pushToStartTokenUpdates {
+            let pushTokenString = pushToken.reduce("") { $0 + String(format: "%02x", $1) }
+            print("=== [START] ScoreActivityAttributes: \(pushTokenString)")
         }
     }
 
-    static func listenForTokenToUpdateActivityViaPush() {
-        Task {
-            for await activityData in Activity<ScoreActivityAttributes>.activityUpdates {
-                for await tokenData in activityData.pushTokenUpdates {
-                    let token = tokenData.map { String(format: "%02x", $0) }.joined()
-                    print("=== [UPDATE] ScoreActivityAttributes [\(activityData.id)] : \(token)")
-                }
+    func listenForTokenToUpdateActivityViaPush() async {
+        for await activityData in Activity<ScoreActivityAttributes>.activityUpdates {
+            for await tokenData in activityData.pushTokenUpdates {
+                let token = tokenData.map { String(format: "%02x", $0) }.joined()
+                print("=== [UPDATE] ScoreActivityAttributes [\(activityData.id)] : \(token)")
+            }
 
-                for await stateUpdate in activityData.activityStateUpdates {
-                    print("=== [STATE] ScoreActivityAttributes [\(activityData.id)] : \(stateUpdate)")
-                }
+            for await stateUpdate in activityData.activityStateUpdates {
+                print("=== [STATE] ScoreActivityAttributes [\(activityData.id)] : \(stateUpdate)")
+            }
 
-                for await newContent in activityData.contentUpdates {
-                    print("=== [CONTENT] ScoreActivityAttributes [\(activityData.id)] : \(newContent)")
-                }
+            for await newContent in activityData.contentUpdates {
+                print("=== [CONTENT] ScoreActivityAttributes [\(activityData.id)] : \(newContent)")
             }
         }
     }
