@@ -18,3 +18,10 @@ Here are the videos that use this code base.
 <img src="https://i.ytimg.com/vi/mu9LlmUYC9E/maxresdefault.jpg" width="400" />
 
 [Code at this point in time](https://github.com/fespinoza/Youtube-SampleProjects/tree/live-activities)
+
+### 2. [Design and Develop Live Activities for iOS 26 (Remastered)](https://www.youtube.com/watch?v=E63kKNCYO0c)
+
+
+<img src="https://i.ytimg.com/vi/E63kKNCYO0c/maxresdefault.jpg" width="400" />
+
+[Code at this point in time](https://github.com/fespinoza/Youtube-SampleProjects/tree/live-activities)
