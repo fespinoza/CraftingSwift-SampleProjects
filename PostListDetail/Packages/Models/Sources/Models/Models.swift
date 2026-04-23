@@ -6,7 +6,7 @@ public typealias TagID = Tagged<Post.Tag, UUID>
 public typealias CommentID = Tagged<Post.Comment, UUID>
 public typealias AuthorID = Tagged<Post.Comment.Author, UUID>
 
-public struct Post: Decodable, Identifiable {
+public struct Post: Decodable, Identifiable, Equatable {
     public let metadata: Metadata
     public let socialInfo: SocialInfo
     public let content: AttributedString
@@ -33,7 +33,7 @@ public struct PostItem: Decodable, Identifiable {
 }
 
 extension Post {
-    public struct Metadata: Decodable {
+    public struct Metadata: Decodable, Equatable {
         public let id: PostID
         public let title: String
         public let summary: String
@@ -51,7 +51,7 @@ extension Post {
         }
     }
 
-    public struct Tag: Decodable, Identifiable {
+    public struct Tag: Decodable, Identifiable, Equatable, Hashable {
         public let id: TagID
         public let name: String
 
@@ -61,7 +61,7 @@ extension Post {
         }
     }
 
-    public struct SocialInfo: Decodable {
+    public struct SocialInfo: Decodable, Equatable {
         public let likeCount: Int
         public let isLiked: Bool
         public let comments: [Comment]
@@ -75,7 +75,7 @@ extension Post {
         }
     }
 
-    public struct Comment: Decodable, Identifiable {
+    public struct Comment: Decodable, Identifiable, Equatable {
         public let id: CommentID
         public let content: String
         public let author: Author
@@ -91,7 +91,7 @@ extension Post {
 }
 
 extension Post.Comment {
-    public struct Author: Decodable, Identifiable {
+    public struct Author: Decodable, Identifiable, Equatable {
         public let id: AuthorID
         public let firstName: String
         public let lastName: String
@@ -105,7 +105,7 @@ extension Post.Comment {
         }
     }
 
-    public struct SocialInfo: Decodable {
+    public struct SocialInfo: Decodable, Equatable {
         public let likeCount: Int
         public let isLiked: Bool
 
