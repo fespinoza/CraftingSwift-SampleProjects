@@ -1,6 +1,23 @@
 import SwiftUI
 import Models
 
+struct TagItemView: View {
+    let tag: Post.Tag
+
+    var body: some View {
+        Text(tag.name)
+            .foregroundStyle(Color.white)
+            .font(.caption)
+            .bold()
+            .padding(.horizontal, 8)
+            .padding(.vertical, 4)
+            .background(
+                RoundedRectangle(cornerRadius: 8)
+                    .foregroundStyle(Color.indigo)
+            )
+    }
+}
+
 struct PostTagList: View {
     let tags: [Post.Tag]
 
@@ -9,16 +26,7 @@ struct PostTagList: View {
             HStack {
                 ForEach(tags) { tag in
                     NavigationLink(value: PostRoute.postsForTag(tag)) {
-                        Text(tag.name)
-                            .foregroundStyle(Color.white)
-                            .font(.caption)
-                            .bold()
-                            .padding(.horizontal, 8)
-                            .padding(.vertical, 4)
-                            .background(
-                                RoundedRectangle(cornerRadius: 8)
-                                    .foregroundStyle(Color.indigo)
-                            )
+                        TagItemView(tag: tag)
                     }
                     .navigationLinkIndicatorVisibility(.hidden)
                 }

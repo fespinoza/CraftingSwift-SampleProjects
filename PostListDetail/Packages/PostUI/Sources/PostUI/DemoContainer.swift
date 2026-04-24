@@ -12,7 +12,10 @@ struct DemoContainer: View {
             }
 
             Tab("Search", systemImage: "magnifyingglass") {
-                Text("TODO")
+                NavigationStack {
+                    PostSearchView()
+                        .postDestinations()
+                }
             }
         }
     }
@@ -22,7 +25,7 @@ struct DemoContainer: View {
     DemoContainer()
 }
 
-private extension View {
+extension View {
     func postDestinations() -> some View {
         navigationDestination(for: PostRoute.self) { route in
             switch route {
