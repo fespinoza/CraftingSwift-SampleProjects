@@ -2,9 +2,11 @@ import Foundation
 
 public class TestData {
     public var posts: [Post]
+    public var tags: [Post.Tag]
 
-    public init(posts: [Post] = []) {
+    public init(posts: [Post] = [], tags: [Post.Tag] = []) {
         self.posts = posts
+        self.tags = tags
     }
 
     public var post: Post {
@@ -24,6 +26,22 @@ public class TestData {
         let decoder = JSONDecoder()
         decoder.dateDecodingStrategy = .iso8601
         posts = try decoder.decode([Post].self, from: data)
+
+        var uniqueTags: Set<Post.Tag> = []
+        var uniqueTagNames: Set<String> = []
+
+        posts.forEach {
+            $0.metadata.tags.forEach { tag in
+                if uniqueTagNames.contains(tag.name) {
+                    return
+                }
+
+                uniqueTagNames.insert(tag.name)
+                uniqueTags.insert(tag)
+            }
+        }
+
+        tags = Array(uniqueTags).sorted { $0.name < $1.name }
     }
 }
 

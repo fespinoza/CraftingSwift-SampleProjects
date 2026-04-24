@@ -21,22 +21,7 @@ struct PostSearchView: View {
     func tags() -> [Post.Tag] {
         let data = TestData()
         try! data.loadData()
-
-        var uniqueTags: Set<Post.Tag> = []
-        var uniqueTagNames: Set<String> = []
-
-        data.posts.forEach {
-            $0.metadata.tags.forEach { tag in
-                if uniqueTagNames.contains(tag.name) {
-                    return
-                }
-
-                uniqueTagNames.insert(tag.name)
-                uniqueTags.insert(tag)
-            }
-        }
-
-        return Array(uniqueTags).sorted { $0.name < $1.name }
+        return data.tags
     }
 }
 
