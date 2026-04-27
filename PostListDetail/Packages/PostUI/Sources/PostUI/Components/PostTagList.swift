@@ -6,32 +6,41 @@ struct TagItemView: View {
 
     var body: some View {
         Text(tag.name)
-            .foregroundStyle(Color.white)
-            .font(.caption)
-            .bold()
-            .padding(.horizontal, 8)
-            .padding(.vertical, 4)
+            .font(.system(.caption, design: .rounded).weight(.bold))
+            .foregroundStyle(PostPalette.ink)
+            .padding(.horizontal, 12)
+            .padding(.vertical, 8)
             .background(
-                RoundedRectangle(cornerRadius: 8)
-                    .foregroundStyle(Color.indigo)
+                Capsule(style: .continuous)
+                    .fill(.white.opacity(0.62))
             )
+            .overlay {
+                Capsule(style: .continuous)
+                    .strokeBorder(PostPalette.accent.opacity(0.18), lineWidth: 1)
+            }
     }
 }
 
 struct PostTagList: View {
     let tags: [Post.Tag]
+    var isNavigationEnabled = true
 
     var body: some View {
         ScrollView(.horizontal) {
-            HStack {
+            HStack(spacing: 8) {
                 ForEach(tags) { tag in
-                    NavigationLink(value: PostRoute.postsForTag(tag)) {
+                    if isNavigationEnabled {
+                        NavigationLink(value: PostRoute.postsForTag(tag)) {
+                            TagItemView(tag: tag)
+                        }
+                        .buttonStyle(.plain)
+                    } else {
                         TagItemView(tag: tag)
                     }
-                    .navigationLinkIndicatorVisibility(.hidden)
                 }
             }
         }
+        .scrollIndicators(.hidden)
     }
 }
 

@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9B87D5912F9001040074DEFF /* PostUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9B87D5902F9001040074DEFF /* PostUI */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		9B87D5802F8FFE690074DEFF /* PostListDetail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PostListDetail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -28,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B87D5912F9001040074DEFF /* PostUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,10 +73,10 @@
 			);
 			fileSystemSynchronizedGroups = (
 				9B87D5822F8FFE690074DEFF /* PostListDetail */,
-				9B87D58E2F9001040074DEFF /* Packages */,
 			);
 			name = PostListDetail;
 			packageProductDependencies = (
+				9B87D5902F9001040074DEFF /* PostUI */,
 			);
 			productName = PostListDetail;
 			productReference = 9B87D5802F8FFE690074DEFF /* PostListDetail.app */;
@@ -101,6 +106,9 @@
 			);
 			mainGroup = 9B87D5772F8FFE690074DEFF;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				9B87D58F2F9001040074DEFF /* XCLocalSwiftPackageReference "Packages/PostUI" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 9B87D5812F8FFE690074DEFF /* Products */;
 			projectDirPath = "";
@@ -358,6 +366,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		9B87D58F2F9001040074DEFF /* XCLocalSwiftPackageReference "Packages/PostUI" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/PostUI;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9B87D5902F9001040074DEFF /* PostUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PostUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9B87D5782F8FFE690074DEFF /* Project object */;
 }

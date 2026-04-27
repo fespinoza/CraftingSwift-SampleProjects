@@ -43,9 +43,23 @@ struct NetworkClient {
             },
             searchPosts: { query in
                 try await randomDelay()
+                let normalizedQuery = query.trimmingCharacters(in: .whitespacesAndNewlines)
+
                 return testData
                     .posts
-                    .filter { $0.metadata.title.localizedCaseInsensitiveContains(query) }
+                    .filter { post in
+                        guard normalizedQuery.isEmpty == false else { return true }
+
+                        let authorNames = post.socialInfo.comments.map {
+                            $0.author.firstName + " " + $0.author.lastName
+                        }
+
+                        return post.metadata.title.localizedCaseInsensitiveContains(normalizedQuery)
+                            || post.metadata.summary.localizedCaseInsensitiveContains(normalizedQuery)
+                            || post.content.description.localizedCaseInsensitiveContains(normalizedQuery)
+                            || post.metadata.tags.contains(where: { $0.name.localizedCaseInsensitiveContains(normalizedQuery) })
+                            || authorNames.contains(where: { $0.localizedCaseInsensitiveContains(normalizedQuery) })
+                    }
                     .map { Post.Summary(post: $0) }
 
             },

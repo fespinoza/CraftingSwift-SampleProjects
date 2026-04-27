@@ -1,23 +1,28 @@
 import SwiftUI
 import Models
 
-struct DemoContainer: View {
-    var body: some View {
+public struct DemoContainer: View {
+    public init() {}
+
+    public var body: some View {
         TabView {
-            Tab("Posts", systemImage: "star") {
+            Tab("Feed", systemImage: "newspaper.fill") {
                 NavigationStack {
                     PostListScreen(useCase: .allPosts)
                         .postDestinations()
                 }
             }
 
-            Tab("Search", systemImage: "magnifyingglass") {
+            Tab("Discover", systemImage: "square.grid.2x2.fill") {
                 NavigationStack {
                     PostSearchView()
                         .postDestinations()
                 }
             }
         }
+        .tint(PostPalette.accent)
+        .toolbarBackground(.visible, for: .tabBar)
+        .toolbarColorScheme(.light, for: .tabBar)
     }
 }
 

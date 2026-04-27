@@ -6,16 +6,21 @@
 //
 
 import SwiftUI
+#if canImport(PostUI)
+import PostUI
+#endif
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+#if canImport(PostUI)
+        DemoContainer()
+#else
+        ContentUnavailableView(
+            "PostUI Not Linked",
+            systemImage: "shippingbox",
+            description: Text("Add the local PostUI package to the app target to launch the redesigned experience.")
+        )
+#endif
     }
 }
 

@@ -3,8 +3,9 @@ import Models
 
 struct PostDetailScreen: View {
     let id: Post.ID
+    @Environment(\.networkClient) private var networkClient
 
-    @State var loadingState: BasicLoadingState = .idle
+    @State private var loadingState: BasicLoadingState = .idle
 
     enum BasicLoadingState: Equatable {
         case idle
@@ -13,32 +14,53 @@ struct PostDetailScreen: View {
         case error(String)
     }
 
-    private let data = TestData()
-
     var body: some View {
-        Group {
+        ZStack {
+            PostSceneBackground()
+
             switch loadingState {
             case .idle:
-                Color.gray
+                Color.clear
+
             case .loading:
-                ProgressView()
+                ProgressView("Loading story")
+                    .tint(PostPalette.accent)
+                    .postSurface()
+                    .padding(.horizontal, 20)
+
             case let .dataLoaded(post):
                 PostDetailView(post: post)
+
             case .error(let error):
-                Text(error)
-                    .foregroundStyle(.red)
+                ContentUnavailableView(
+                    "Story Not Available",
+                    systemImage: "newspaper.circle.fill",
+                    description: Text(error)
+                )
+                .postSurface()
+                .padding(.horizontal, 20)
             }
         }
-        .animation(.easeInOut, value: loadingState)
-        .task {
-            loadingState = .loading
-            try? data.loadData()
-            try? await Task.sleep(for: .seconds(2))
+        .navigationBarTitleDisplayMode(.inline)
+        .task { await loadPost() }
+    }
 
-            if let post = data.posts.first(where: { $0.id == id }) {
+    private func loadPost() async {
+        guard case .idle = loadingState else { return }
+
+        withAnimation(.easeInOut(duration: 0.2)) {
+            loadingState = .loading
+        }
+
+        do {
+            let post = try await networkClient.fetchPost(id)
+
+            withAnimation(.easeInOut(duration: 0.25)) {
                 loadingState = .dataLoaded(post)
-            } else {
-                loadingState = .error("Post not found \(id)")
+            }
+        } catch {
+            withAnimation(.easeInOut(duration: 0.25)) {
+                loadingState = .error(error.localizedDescription)
             }
         }
     }
