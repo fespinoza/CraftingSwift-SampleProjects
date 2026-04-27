@@ -1,0 +1,2402 @@
+[
+  {
+    "id": "ae89a062-b96c-47be-8b9c-3ee297a50044",
+    "title": "Building a Feed with SwiftUI #1",
+    "summary": "Learn how to structure a scalable SwiftUI feed with clear state, reusable rows, and smooth data-driven updates.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-1/640/360",
+    "publishedDate": "2026-01-01T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "2ce8e8d8-874a-41e3-be9a-86424c57cfcd",
+        "name": "Beginner"
+      },
+      {
+        "id": "62e6ae72-76cd-4b24-9671-e686ec89cda1",
+        "name": "State"
+      }
+    ],
+    "likeCount": 120,
+    "isLiked": true,
+    "commentCount": 2
+  },
+  {
+    "id": "6c34f827-5154-4f78-812e-1fb3245d1328",
+    "title": "Understanding @State and @Binding #2",
+    "summary": "A practical guide to choosing between local state and bindings so updates stay predictable across your views.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-2/640/360",
+    "publishedDate": "2026-01-02T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "0fc2dd4d-436f-42c9-bf42-58ea40fbfc8e",
+        "name": "Layout"
+      },
+      {
+        "id": "011e741f-0590-4c9b-ab6f-e1f9b5011c56",
+        "name": "Design"
+      }
+    ],
+    "likeCount": 127,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "c4380dcc-fee5-4eb0-82fe-68e463622a18",
+    "title": "NavigationStack Patterns #3",
+    "summary": "Explore clean NavigationStack flows, typed navigation state, and patterns that hold up as screens and routes grow.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-3/640/360",
+    "publishedDate": "2026-01-03T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "a4c5e7f3-1716-4c9d-a6b6-fb3853ddbdf7",
+        "name": "Navigation"
+      },
+      {
+        "id": "a6232320-9fed-452f-b150-865e4159a683",
+        "name": "iOS"
+      }
+    ],
+    "likeCount": 134,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "c5c170cc-3f4a-439e-ae2d-8fc9d6f007f0",
+    "title": "AsyncImage for Remote Media #4",
+    "summary": "Load remote images gracefully with placeholders, error handling, and layouts that stay polished while content streams in.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-4/640/360",
+    "publishedDate": "2026-01-04T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "d35fc453-f74c-4706-90d4-b0f43d281c4a",
+        "name": "Animation"
+      },
+      {
+        "id": "f1902efb-d6f8-46a3-b06a-2c65ad4d4840",
+        "name": "Advanced"
+      }
+    ],
+    "likeCount": 141,
+    "isLiked": true,
+    "commentCount": 2
+  },
+  {
+    "id": "0ea79ff2-4a6f-48e3-8839-986414ad078f",
+    "title": "Designing Reusable View Modifiers #5",
+    "summary": "Turn repeated styling and behavior into focused view modifiers that keep SwiftUI screens consistent and easy to maintain.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-5/640/360",
+    "publishedDate": "2026-01-05T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "6764becf-9b92-4422-9899-69c8fd02df6c",
+        "name": "Accessibility"
+      },
+      {
+        "id": "97f04c9a-d6ba-481a-b539-7c760975737f",
+        "name": "Best Practices"
+      }
+    ],
+    "likeCount": 148,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "8c159741-0b22-490d-ac4f-65bbeb3a56d2",
+    "title": "Working with LazyVStack #6",
+    "summary": "Use LazyVStack to render long, scrollable content efficiently without sacrificing readability or composition.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-6/640/360",
+    "publishedDate": "2026-01-06T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "09a9a32f-3e7f-4aaa-aa9a-76b1f7d89922",
+        "name": "Concurrency"
+      },
+      {
+        "id": "b36572b7-5860-409a-9ec3-266f09ad462c",
+        "name": "Performance"
+      }
+    ],
+    "likeCount": 155,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "74d8659e-130f-4e24-8820-b6da636773c7",
+    "title": "Creating Accessible SwiftUI Views #7",
+    "summary": "Build SwiftUI interfaces with stronger VoiceOver support, better semantics, and defaults that are easier for everyone to use.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-7/640/360",
+    "publishedDate": "2026-01-07T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "12898324-3081-41ec-83ba-e9c525297513",
+        "name": "SwiftData"
+      },
+      {
+        "id": "0fe92cad-dc45-4970-8885-f64fd1ce26ec",
+        "name": "Architecture"
+      }
+    ],
+    "likeCount": 162,
+    "isLiked": true,
+    "commentCount": 2
+  },
+  {
+    "id": "240d65fa-65df-48c8-9602-cd4c49e8b2b3",
+    "title": "Animating with phaseAnimator #8",
+    "summary": "See how phaseAnimator can coordinate expressive, multi-step animations without turning view code into a tangle.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-8/640/360",
+    "publishedDate": "2026-01-08T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "06b5736c-786d-4bad-977e-e1f9d311d83a",
+        "name": "Lists"
+      },
+      {
+        "id": "5a73fac1-a7df-44c8-80ed-d645845b5f66",
+        "name": "UX"
+      }
+    ],
+    "likeCount": 169,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "d4ea7932-b4dd-4747-9bfb-fa31ab920917",
+    "title": "Managing Focus with FocusState #9",
+    "summary": "Control text input focus, keyboard flow, and field-to-field transitions with FocusState in a predictable way.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-9/640/360",
+    "publishedDate": "2026-01-09T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "2ce8e8d8-874a-41e3-be9a-86424c57cfcd",
+        "name": "Beginner"
+      },
+      {
+        "id": "62e6ae72-76cd-4b24-9671-e686ec89cda1",
+        "name": "State"
+      }
+    ],
+    "likeCount": 176,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "8c4bb860-c11a-4679-aa12-b73d353f8d1c",
+    "title": "Sheet Presentation Best Practices #10",
+    "summary": "Present sheets with clearer state management, better dismissal handling, and patterns that scale beyond simple demos.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-10/640/360",
+    "publishedDate": "2026-01-10T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "0fc2dd4d-436f-42c9-bf42-58ea40fbfc8e",
+        "name": "Layout"
+      },
+      {
+        "id": "011e741f-0590-4c9b-ab6f-e1f9b5011c56",
+        "name": "Design"
+      }
+    ],
+    "likeCount": 183,
+    "isLiked": true,
+    "commentCount": 2
+  },
+  {
+    "id": "46edb37e-8b83-42ac-acb8-a04ccdcc4eb0",
+    "title": "Searchable Lists in SwiftUI #11",
+    "summary": "Add responsive list search with clean filtering logic, sensible empty states, and a better browsing experience.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-11/640/360",
+    "publishedDate": "2026-01-11T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "a4c5e7f3-1716-4c9d-a6b6-fb3853ddbdf7",
+        "name": "Navigation"
+      },
+      {
+        "id": "a6232320-9fed-452f-b150-865e4159a683",
+        "name": "iOS"
+      }
+    ],
+    "likeCount": 190,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "83cfbb87-baa7-46d5-8339-602d33325afd",
+    "title": "Using Observation in iOS Apps #12",
+    "summary": "Learn how Observation simplifies model updates and keeps SwiftUI views in sync with less boilerplate.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-12/640/360",
+    "publishedDate": "2026-01-12T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "d35fc453-f74c-4706-90d4-b0f43d281c4a",
+        "name": "Animation"
+      },
+      {
+        "id": "f1902efb-d6f8-46a3-b06a-2c65ad4d4840",
+        "name": "Advanced"
+      }
+    ],
+    "likeCount": 197,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "69960d17-31f3-470e-b32a-5874073e8e47",
+    "title": "Composable Empty States #13",
+    "summary": "Design empty states that explain what to do next while staying reusable across lists, searches, and detail screens.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-13/640/360",
+    "publishedDate": "2026-01-13T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "6764becf-9b92-4422-9899-69c8fd02df6c",
+        "name": "Accessibility"
+      },
+      {
+        "id": "97f04c9a-d6ba-481a-b539-7c760975737f",
+        "name": "Best Practices"
+      }
+    ],
+    "likeCount": 204,
+    "isLiked": true,
+    "commentCount": 2
+  },
+  {
+    "id": "45608b92-4f4b-4302-8836-9fc6982b3403",
+    "title": "Pull to Refresh with refreshable #14",
+    "summary": "Use refreshable to reload data cleanly, handle async work, and keep the refresh experience feeling native.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-14/640/360",
+    "publishedDate": "2026-01-14T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "09a9a32f-3e7f-4aaa-aa9a-76b1f7d89922",
+        "name": "Concurrency"
+      },
+      {
+        "id": "b36572b7-5860-409a-9ec3-266f09ad462c",
+        "name": "Performance"
+      }
+    ],
+    "likeCount": 211,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "fbe2a0ed-f88e-49c8-94a3-07963c492cb2",
+    "title": "Building a Settings Screen #15",
+    "summary": "Compose a settings screen that feels native, stays organized as options grow, and is easy to extend.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-15/640/360",
+    "publishedDate": "2026-01-15T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "12898324-3081-41ec-83ba-e9c525297513",
+        "name": "SwiftData"
+      },
+      {
+        "id": "0fe92cad-dc45-4970-8885-f64fd1ce26ec",
+        "name": "Architecture"
+      }
+    ],
+    "likeCount": 218,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "f2a64d31-9ac3-4d25-94a5-612359f5c906",
+    "title": "Swipe Actions in Lists #16",
+    "summary": "Add contextual list actions that feel natural on iPhone and remain easy to reason about in code.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-16/640/360",
+    "publishedDate": "2026-01-16T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "06b5736c-786d-4bad-977e-e1f9d311d83a",
+        "name": "Lists"
+      },
+      {
+        "id": "5a73fac1-a7df-44c8-80ed-d645845b5f66",
+        "name": "UX"
+      }
+    ],
+    "likeCount": 225,
+    "isLiked": true,
+    "commentCount": 2
+  },
+  {
+    "id": "e6e738a9-a3aa-4a9a-9476-f420ff4dd820",
+    "title": "Charts Basics with Swift Charts #17",
+    "summary": "Build clear, useful charts with Swift Charts by focusing on readable marks, scales, and data storytelling.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-17/640/360",
+    "publishedDate": "2026-01-17T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "2ce8e8d8-874a-41e3-be9a-86424c57cfcd",
+        "name": "Beginner"
+      },
+      {
+        "id": "62e6ae72-76cd-4b24-9671-e686ec89cda1",
+        "name": "State"
+      }
+    ],
+    "likeCount": 232,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "7e301081-b193-45df-a80b-5e7af7834dd8",
+    "title": "Custom Layouts in SwiftUI #18",
+    "summary": "Create custom layouts when stacks and grids fall short, while keeping sizing and placement logic understandable.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-18/640/360",
+    "publishedDate": "2026-01-18T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "0fc2dd4d-436f-42c9-bf42-58ea40fbfc8e",
+        "name": "Layout"
+      },
+      {
+        "id": "011e741f-0590-4c9b-ab6f-e1f9b5011c56",
+        "name": "Design"
+      }
+    ],
+    "likeCount": 239,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "5e917a33-2220-4b38-804c-0af25206ad90",
+    "title": "Grid Layouts for Dashboards #19",
+    "summary": "Use grid layouts to build dashboard-style screens that balance dense information with visual structure.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-19/640/360",
+    "publishedDate": "2026-01-19T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "a4c5e7f3-1716-4c9d-a6b6-fb3853ddbdf7",
+        "name": "Navigation"
+      },
+      {
+        "id": "a6232320-9fed-452f-b150-865e4159a683",
+        "name": "iOS"
+      }
+    ],
+    "likeCount": 246,
+    "isLiked": true,
+    "commentCount": 2
+  },
+  {
+    "id": "c172bc78-eb8e-48a9-8101-e57754c90371",
+    "title": "Matched Geometry Transitions #20",
+    "summary": "Create smooth transitions between related views using matched geometry effects that reinforce spatial continuity.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-20/640/360",
+    "publishedDate": "2026-01-20T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "d35fc453-f74c-4706-90d4-b0f43d281c4a",
+        "name": "Animation"
+      },
+      {
+        "id": "f1902efb-d6f8-46a3-b06a-2c65ad4d4840",
+        "name": "Advanced"
+      }
+    ],
+    "likeCount": 253,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "21d60a6e-1e82-4cf3-aa62-ff79d42d6a75",
+    "title": "Forms that Feel Native #21",
+    "summary": "Design forms that respect platform conventions, reduce friction, and make data entry feel polished.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-21/640/360",
+    "publishedDate": "2026-01-21T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "6764becf-9b92-4422-9899-69c8fd02df6c",
+        "name": "Accessibility"
+      },
+      {
+        "id": "97f04c9a-d6ba-481a-b539-7c760975737f",
+        "name": "Best Practices"
+      }
+    ],
+    "likeCount": 260,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "6b9d4fe8-54b0-4ce0-b967-c048915ab9a1",
+    "title": "Preview-Driven Development #22",
+    "summary": "Use previews as a daily workflow tool to iterate faster, validate states, and catch UI issues earlier.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-22/640/360",
+    "publishedDate": "2026-01-22T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "09a9a32f-3e7f-4aaa-aa9a-76b1f7d89922",
+        "name": "Concurrency"
+      },
+      {
+        "id": "b36572b7-5860-409a-9ec3-266f09ad462c",
+        "name": "Performance"
+      }
+    ],
+    "likeCount": 267,
+    "isLiked": true,
+    "commentCount": 2
+  },
+  {
+    "id": "a991f89c-9cf5-41d4-a4fc-a0891738db79",
+    "title": "Dependency Injection for Views #23",
+    "summary": "Pass dependencies into views cleanly so features stay testable, modular, and easier to evolve.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-23/640/360",
+    "publishedDate": "2026-01-23T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "12898324-3081-41ec-83ba-e9c525297513",
+        "name": "SwiftData"
+      },
+      {
+        "id": "0fe92cad-dc45-4970-8885-f64fd1ce26ec",
+        "name": "Architecture"
+      }
+    ],
+    "likeCount": 274,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "a0159753-7fbb-4d1a-9c1b-91394016035d",
+    "title": "Persistence with SwiftData #24",
+    "summary": "Model, store, and query app data with SwiftData using patterns that feel modern and practical.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-24/640/360",
+    "publishedDate": "2026-01-24T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "06b5736c-786d-4bad-977e-e1f9d311d83a",
+        "name": "Lists"
+      },
+      {
+        "id": "5a73fac1-a7df-44c8-80ed-d645845b5f66",
+        "name": "UX"
+      }
+    ],
+    "likeCount": 281,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "54613e54-745c-4688-8c5c-ff1e1e75688c",
+    "title": "Filtering Large Data Sets #25",
+    "summary": "Keep large filtered views responsive with smarter query structure, state handling, and user feedback.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-25/640/360",
+    "publishedDate": "2026-01-25T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "2ce8e8d8-874a-41e3-be9a-86424c57cfcd",
+        "name": "Beginner"
+      },
+      {
+        "id": "62e6ae72-76cd-4b24-9671-e686ec89cda1",
+        "name": "State"
+      }
+    ],
+    "likeCount": 288,
+    "isLiked": true,
+    "commentCount": 2
+  },
+  {
+    "id": "643795e4-8ad1-4e58-8fad-3420e4bc13b0",
+    "title": "Building a Feed with SwiftUI #26",
+    "summary": "Learn how to structure a scalable SwiftUI feed with clear state, reusable rows, and smooth data-driven updates.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-26/640/360",
+    "publishedDate": "2026-01-26T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "0fc2dd4d-436f-42c9-bf42-58ea40fbfc8e",
+        "name": "Layout"
+      },
+      {
+        "id": "011e741f-0590-4c9b-ab6f-e1f9b5011c56",
+        "name": "Design"
+      }
+    ],
+    "likeCount": 295,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "a6021719-9648-4220-9c3f-1c8f6535dd8d",
+    "title": "Understanding @State and @Binding #27",
+    "summary": "A practical guide to choosing between local state and bindings so updates stay predictable across your views.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-27/640/360",
+    "publishedDate": "2026-01-27T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "a4c5e7f3-1716-4c9d-a6b6-fb3853ddbdf7",
+        "name": "Navigation"
+      },
+      {
+        "id": "a6232320-9fed-452f-b150-865e4159a683",
+        "name": "iOS"
+      }
+    ],
+    "likeCount": 302,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "4ee8ab26-8694-476f-a483-0aaa12fac831",
+    "title": "NavigationStack Patterns #28",
+    "summary": "Explore clean NavigationStack flows, typed navigation state, and patterns that hold up as screens and routes grow.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-28/640/360",
+    "publishedDate": "2026-01-28T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "d35fc453-f74c-4706-90d4-b0f43d281c4a",
+        "name": "Animation"
+      },
+      {
+        "id": "f1902efb-d6f8-46a3-b06a-2c65ad4d4840",
+        "name": "Advanced"
+      }
+    ],
+    "likeCount": 309,
+    "isLiked": true,
+    "commentCount": 2
+  },
+  {
+    "id": "9f3b8a6e-75a9-43dd-8073-90d4c3339596",
+    "title": "AsyncImage for Remote Media #29",
+    "summary": "Load remote images gracefully with placeholders, error handling, and layouts that stay polished while content streams in.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-29/640/360",
+    "publishedDate": "2026-01-29T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "6764becf-9b92-4422-9899-69c8fd02df6c",
+        "name": "Accessibility"
+      },
+      {
+        "id": "97f04c9a-d6ba-481a-b539-7c760975737f",
+        "name": "Best Practices"
+      }
+    ],
+    "likeCount": 316,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "944d71d1-1070-4a2c-8663-ba25f1573ed4",
+    "title": "Designing Reusable View Modifiers #30",
+    "summary": "Turn repeated styling and behavior into focused view modifiers that keep SwiftUI screens consistent and easy to maintain.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-30/640/360",
+    "publishedDate": "2026-01-30T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "09a9a32f-3e7f-4aaa-aa9a-76b1f7d89922",
+        "name": "Concurrency"
+      },
+      {
+        "id": "b36572b7-5860-409a-9ec3-266f09ad462c",
+        "name": "Performance"
+      }
+    ],
+    "likeCount": 323,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "b7ff11d3-1743-4056-aee0-4f763fc7e76f",
+    "title": "Working with LazyVStack #31",
+    "summary": "Use LazyVStack to render long, scrollable content efficiently without sacrificing readability or composition.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-31/640/360",
+    "publishedDate": "2026-01-31T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "12898324-3081-41ec-83ba-e9c525297513",
+        "name": "SwiftData"
+      },
+      {
+        "id": "0fe92cad-dc45-4970-8885-f64fd1ce26ec",
+        "name": "Architecture"
+      }
+    ],
+    "likeCount": 330,
+    "isLiked": true,
+    "commentCount": 2
+  },
+  {
+    "id": "518477bc-51a3-41a4-8fa9-f0366bba7cdc",
+    "title": "Creating Accessible SwiftUI Views #32",
+    "summary": "Build SwiftUI interfaces with stronger VoiceOver support, better semantics, and defaults that are easier for everyone to use.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-32/640/360",
+    "publishedDate": "2026-02-01T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "06b5736c-786d-4bad-977e-e1f9d311d83a",
+        "name": "Lists"
+      },
+      {
+        "id": "5a73fac1-a7df-44c8-80ed-d645845b5f66",
+        "name": "UX"
+      }
+    ],
+    "likeCount": 337,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "9ff12406-bf7b-471c-9c69-e485e1465613",
+    "title": "Animating with phaseAnimator #33",
+    "summary": "See how phaseAnimator can coordinate expressive, multi-step animations without turning view code into a tangle.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-33/640/360",
+    "publishedDate": "2026-02-02T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "2ce8e8d8-874a-41e3-be9a-86424c57cfcd",
+        "name": "Beginner"
+      },
+      {
+        "id": "62e6ae72-76cd-4b24-9671-e686ec89cda1",
+        "name": "State"
+      }
+    ],
+    "likeCount": 344,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "4a84ddf3-b489-40a2-a544-460083dd95aa",
+    "title": "Managing Focus with FocusState #34",
+    "summary": "Control text input focus, keyboard flow, and field-to-field transitions with FocusState in a predictable way.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-34/640/360",
+    "publishedDate": "2026-02-03T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "0fc2dd4d-436f-42c9-bf42-58ea40fbfc8e",
+        "name": "Layout"
+      },
+      {
+        "id": "011e741f-0590-4c9b-ab6f-e1f9b5011c56",
+        "name": "Design"
+      }
+    ],
+    "likeCount": 351,
+    "isLiked": true,
+    "commentCount": 2
+  },
+  {
+    "id": "59c24cb5-7e67-4192-a551-884d8b1d3803",
+    "title": "Sheet Presentation Best Practices #35",
+    "summary": "Present sheets with clearer state management, better dismissal handling, and patterns that scale beyond simple demos.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-35/640/360",
+    "publishedDate": "2026-02-04T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "a4c5e7f3-1716-4c9d-a6b6-fb3853ddbdf7",
+        "name": "Navigation"
+      },
+      {
+        "id": "a6232320-9fed-452f-b150-865e4159a683",
+        "name": "iOS"
+      }
+    ],
+    "likeCount": 358,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "4485c63e-79d5-4f31-8cca-31918f303a95",
+    "title": "Searchable Lists in SwiftUI #36",
+    "summary": "Add responsive list search with clean filtering logic, sensible empty states, and a better browsing experience.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-36/640/360",
+    "publishedDate": "2026-02-05T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "d35fc453-f74c-4706-90d4-b0f43d281c4a",
+        "name": "Animation"
+      },
+      {
+        "id": "f1902efb-d6f8-46a3-b06a-2c65ad4d4840",
+        "name": "Advanced"
+      }
+    ],
+    "likeCount": 365,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "a0431d61-4edc-4d71-a255-b4bd0beb7516",
+    "title": "Using Observation in iOS Apps #37",
+    "summary": "Learn how Observation simplifies model updates and keeps SwiftUI views in sync with less boilerplate.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-37/640/360",
+    "publishedDate": "2026-02-06T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "6764becf-9b92-4422-9899-69c8fd02df6c",
+        "name": "Accessibility"
+      },
+      {
+        "id": "97f04c9a-d6ba-481a-b539-7c760975737f",
+        "name": "Best Practices"
+      }
+    ],
+    "likeCount": 372,
+    "isLiked": true,
+    "commentCount": 2
+  },
+  {
+    "id": "ca0e53ff-55bf-4f74-bf74-d24184d07d40",
+    "title": "Composable Empty States #38",
+    "summary": "Design empty states that explain what to do next while staying reusable across lists, searches, and detail screens.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-38/640/360",
+    "publishedDate": "2026-02-07T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "09a9a32f-3e7f-4aaa-aa9a-76b1f7d89922",
+        "name": "Concurrency"
+      },
+      {
+        "id": "b36572b7-5860-409a-9ec3-266f09ad462c",
+        "name": "Performance"
+      }
+    ],
+    "likeCount": 379,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "a2952922-4d22-43d0-982c-6d6e0326947e",
+    "title": "Pull to Refresh with refreshable #39",
+    "summary": "Use refreshable to reload data cleanly, handle async work, and keep the refresh experience feeling native.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-39/640/360",
+    "publishedDate": "2026-02-08T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "12898324-3081-41ec-83ba-e9c525297513",
+        "name": "SwiftData"
+      },
+      {
+        "id": "0fe92cad-dc45-4970-8885-f64fd1ce26ec",
+        "name": "Architecture"
+      }
+    ],
+    "likeCount": 386,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "95b2c734-c106-4319-8db7-1300dd7461fe",
+    "title": "Building a Settings Screen #40",
+    "summary": "Compose a settings screen that feels native, stays organized as options grow, and is easy to extend.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-40/640/360",
+    "publishedDate": "2026-02-09T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "06b5736c-786d-4bad-977e-e1f9d311d83a",
+        "name": "Lists"
+      },
+      {
+        "id": "5a73fac1-a7df-44c8-80ed-d645845b5f66",
+        "name": "UX"
+      }
+    ],
+    "likeCount": 393,
+    "isLiked": true,
+    "commentCount": 2
+  },
+  {
+    "id": "60c75a77-27c7-47e9-b930-a14e5fcab43c",
+    "title": "Swipe Actions in Lists #41",
+    "summary": "Add contextual list actions that feel natural on iPhone and remain easy to reason about in code.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-41/640/360",
+    "publishedDate": "2026-02-10T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "2ce8e8d8-874a-41e3-be9a-86424c57cfcd",
+        "name": "Beginner"
+      },
+      {
+        "id": "62e6ae72-76cd-4b24-9671-e686ec89cda1",
+        "name": "State"
+      }
+    ],
+    "likeCount": 400,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "ddcaf44f-27e5-4bc0-ba0d-7548bd746a8f",
+    "title": "Charts Basics with Swift Charts #42",
+    "summary": "Build clear, useful charts with Swift Charts by focusing on readable marks, scales, and data storytelling.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-42/640/360",
+    "publishedDate": "2026-02-11T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "0fc2dd4d-436f-42c9-bf42-58ea40fbfc8e",
+        "name": "Layout"
+      },
+      {
+        "id": "011e741f-0590-4c9b-ab6f-e1f9b5011c56",
+        "name": "Design"
+      }
+    ],
+    "likeCount": 407,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "7a3f00cd-5919-4364-b730-368a14258da1",
+    "title": "Custom Layouts in SwiftUI #43",
+    "summary": "Create custom layouts when stacks and grids fall short, while keeping sizing and placement logic understandable.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-43/640/360",
+    "publishedDate": "2026-02-12T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "a4c5e7f3-1716-4c9d-a6b6-fb3853ddbdf7",
+        "name": "Navigation"
+      },
+      {
+        "id": "a6232320-9fed-452f-b150-865e4159a683",
+        "name": "iOS"
+      }
+    ],
+    "likeCount": 414,
+    "isLiked": true,
+    "commentCount": 2
+  },
+  {
+    "id": "a765a2f4-9eda-4364-993c-ae48c3f29012",
+    "title": "Grid Layouts for Dashboards #44",
+    "summary": "Use grid layouts to build dashboard-style screens that balance dense information with visual structure.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-44/640/360",
+    "publishedDate": "2026-02-13T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "d35fc453-f74c-4706-90d4-b0f43d281c4a",
+        "name": "Animation"
+      },
+      {
+        "id": "f1902efb-d6f8-46a3-b06a-2c65ad4d4840",
+        "name": "Advanced"
+      }
+    ],
+    "likeCount": 421,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "5f50f3e5-9b01-425b-a1ec-e022107034a5",
+    "title": "Matched Geometry Transitions #45",
+    "summary": "Create smooth transitions between related views using matched geometry effects that reinforce spatial continuity.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-45/640/360",
+    "publishedDate": "2026-02-14T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "6764becf-9b92-4422-9899-69c8fd02df6c",
+        "name": "Accessibility"
+      },
+      {
+        "id": "97f04c9a-d6ba-481a-b539-7c760975737f",
+        "name": "Best Practices"
+      }
+    ],
+    "likeCount": 428,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "261b4457-f0bf-4a0b-963c-16108b1196d6",
+    "title": "Forms that Feel Native #46",
+    "summary": "Design forms that respect platform conventions, reduce friction, and make data entry feel polished.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-46/640/360",
+    "publishedDate": "2026-02-15T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "09a9a32f-3e7f-4aaa-aa9a-76b1f7d89922",
+        "name": "Concurrency"
+      },
+      {
+        "id": "b36572b7-5860-409a-9ec3-266f09ad462c",
+        "name": "Performance"
+      }
+    ],
+    "likeCount": 435,
+    "isLiked": true,
+    "commentCount": 2
+  },
+  {
+    "id": "4c76e6b4-11fe-40b9-bd96-2bb47055a704",
+    "title": "Preview-Driven Development #47",
+    "summary": "Use previews as a daily workflow tool to iterate faster, validate states, and catch UI issues earlier.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-47/640/360",
+    "publishedDate": "2026-02-16T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "12898324-3081-41ec-83ba-e9c525297513",
+        "name": "SwiftData"
+      },
+      {
+        "id": "0fe92cad-dc45-4970-8885-f64fd1ce26ec",
+        "name": "Architecture"
+      }
+    ],
+    "likeCount": 442,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "13f1a705-de9e-4508-bcd9-833f81ac8d49",
+    "title": "Dependency Injection for Views #48",
+    "summary": "Pass dependencies into views cleanly so features stay testable, modular, and easier to evolve.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-48/640/360",
+    "publishedDate": "2026-02-17T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "06b5736c-786d-4bad-977e-e1f9d311d83a",
+        "name": "Lists"
+      },
+      {
+        "id": "5a73fac1-a7df-44c8-80ed-d645845b5f66",
+        "name": "UX"
+      }
+    ],
+    "likeCount": 449,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "e4fdcee5-93c1-4e75-bc0d-0a3d04eb3b21",
+    "title": "Persistence with SwiftData #49",
+    "summary": "Model, store, and query app data with SwiftData using patterns that feel modern and practical.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-49/640/360",
+    "publishedDate": "2026-02-18T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "2ce8e8d8-874a-41e3-be9a-86424c57cfcd",
+        "name": "Beginner"
+      },
+      {
+        "id": "62e6ae72-76cd-4b24-9671-e686ec89cda1",
+        "name": "State"
+      }
+    ],
+    "likeCount": 456,
+    "isLiked": true,
+    "commentCount": 2
+  },
+  {
+    "id": "09b9d5d0-289a-4417-a76a-60d1a806b100",
+    "title": "Filtering Large Data Sets #50",
+    "summary": "Keep large filtered views responsive with smarter query structure, state handling, and user feedback.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-50/640/360",
+    "publishedDate": "2026-02-19T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "0fc2dd4d-436f-42c9-bf42-58ea40fbfc8e",
+        "name": "Layout"
+      },
+      {
+        "id": "011e741f-0590-4c9b-ab6f-e1f9b5011c56",
+        "name": "Design"
+      }
+    ],
+    "likeCount": 463,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "f865adf7-2df5-4079-ad56-a7ce606a0bd9",
+    "title": "Building a Feed with SwiftUI #51",
+    "summary": "Learn how to structure a scalable SwiftUI feed with clear state, reusable rows, and smooth data-driven updates.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-51/640/360",
+    "publishedDate": "2026-02-20T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "a4c5e7f3-1716-4c9d-a6b6-fb3853ddbdf7",
+        "name": "Navigation"
+      },
+      {
+        "id": "a6232320-9fed-452f-b150-865e4159a683",
+        "name": "iOS"
+      }
+    ],
+    "likeCount": 470,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "d20ab5a7-0b88-438e-b8c9-b556d0cdb2e3",
+    "title": "Understanding @State and @Binding #52",
+    "summary": "A practical guide to choosing between local state and bindings so updates stay predictable across your views.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-52/640/360",
+    "publishedDate": "2026-02-21T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "d35fc453-f74c-4706-90d4-b0f43d281c4a",
+        "name": "Animation"
+      },
+      {
+        "id": "f1902efb-d6f8-46a3-b06a-2c65ad4d4840",
+        "name": "Advanced"
+      }
+    ],
+    "likeCount": 477,
+    "isLiked": true,
+    "commentCount": 2
+  },
+  {
+    "id": "063e0975-6a61-4da0-a85f-95fb93abae0a",
+    "title": "NavigationStack Patterns #53",
+    "summary": "Explore clean NavigationStack flows, typed navigation state, and patterns that hold up as screens and routes grow.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-53/640/360",
+    "publishedDate": "2026-02-22T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "6764becf-9b92-4422-9899-69c8fd02df6c",
+        "name": "Accessibility"
+      },
+      {
+        "id": "97f04c9a-d6ba-481a-b539-7c760975737f",
+        "name": "Best Practices"
+      }
+    ],
+    "likeCount": 484,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "c85dfb26-8cf4-4751-bfc1-6ace20885379",
+    "title": "AsyncImage for Remote Media #54",
+    "summary": "Load remote images gracefully with placeholders, error handling, and layouts that stay polished while content streams in.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-54/640/360",
+    "publishedDate": "2026-02-23T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "09a9a32f-3e7f-4aaa-aa9a-76b1f7d89922",
+        "name": "Concurrency"
+      },
+      {
+        "id": "b36572b7-5860-409a-9ec3-266f09ad462c",
+        "name": "Performance"
+      }
+    ],
+    "likeCount": 491,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "f78ce0a9-8efc-4dce-8df0-e5e43f1dd700",
+    "title": "Designing Reusable View Modifiers #55",
+    "summary": "Turn repeated styling and behavior into focused view modifiers that keep SwiftUI screens consistent and easy to maintain.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-55/640/360",
+    "publishedDate": "2026-02-24T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "12898324-3081-41ec-83ba-e9c525297513",
+        "name": "SwiftData"
+      },
+      {
+        "id": "0fe92cad-dc45-4970-8885-f64fd1ce26ec",
+        "name": "Architecture"
+      }
+    ],
+    "likeCount": 498,
+    "isLiked": true,
+    "commentCount": 2
+  },
+  {
+    "id": "5e442963-eda8-4973-a0e0-8656796f4470",
+    "title": "Working with LazyVStack #56",
+    "summary": "Use LazyVStack to render long, scrollable content efficiently without sacrificing readability or composition.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-56/640/360",
+    "publishedDate": "2026-02-25T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "06b5736c-786d-4bad-977e-e1f9d311d83a",
+        "name": "Lists"
+      },
+      {
+        "id": "5a73fac1-a7df-44c8-80ed-d645845b5f66",
+        "name": "UX"
+      }
+    ],
+    "likeCount": 505,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "74a5b531-6db8-42c7-90e0-76e1dcd5b649",
+    "title": "Creating Accessible SwiftUI Views #57",
+    "summary": "Build SwiftUI interfaces with stronger VoiceOver support, better semantics, and defaults that are easier for everyone to use.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-57/640/360",
+    "publishedDate": "2026-02-26T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "2ce8e8d8-874a-41e3-be9a-86424c57cfcd",
+        "name": "Beginner"
+      },
+      {
+        "id": "62e6ae72-76cd-4b24-9671-e686ec89cda1",
+        "name": "State"
+      }
+    ],
+    "likeCount": 512,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "ba09ad5b-d430-4320-b16c-5fa00e0a768e",
+    "title": "Animating with phaseAnimator #58",
+    "summary": "See how phaseAnimator can coordinate expressive, multi-step animations without turning view code into a tangle.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-58/640/360",
+    "publishedDate": "2026-02-27T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "0fc2dd4d-436f-42c9-bf42-58ea40fbfc8e",
+        "name": "Layout"
+      },
+      {
+        "id": "011e741f-0590-4c9b-ab6f-e1f9b5011c56",
+        "name": "Design"
+      }
+    ],
+    "likeCount": 519,
+    "isLiked": true,
+    "commentCount": 2
+  },
+  {
+    "id": "5f0d97c2-f402-469b-bcda-1c8d31a76fba",
+    "title": "Managing Focus with FocusState #59",
+    "summary": "Control text input focus, keyboard flow, and field-to-field transitions with FocusState in a predictable way.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-59/640/360",
+    "publishedDate": "2026-02-28T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "a4c5e7f3-1716-4c9d-a6b6-fb3853ddbdf7",
+        "name": "Navigation"
+      },
+      {
+        "id": "a6232320-9fed-452f-b150-865e4159a683",
+        "name": "iOS"
+      }
+    ],
+    "likeCount": 526,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "213a39ad-ec47-408c-b99e-335ad79dae49",
+    "title": "Sheet Presentation Best Practices #60",
+    "summary": "Present sheets with clearer state management, better dismissal handling, and patterns that scale beyond simple demos.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-60/640/360",
+    "publishedDate": "2026-03-01T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "d35fc453-f74c-4706-90d4-b0f43d281c4a",
+        "name": "Animation"
+      },
+      {
+        "id": "f1902efb-d6f8-46a3-b06a-2c65ad4d4840",
+        "name": "Advanced"
+      }
+    ],
+    "likeCount": 533,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "88b296dc-d56f-425b-8d4c-ad9a1da4e1a9",
+    "title": "Searchable Lists in SwiftUI #61",
+    "summary": "Add responsive list search with clean filtering logic, sensible empty states, and a better browsing experience.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-61/640/360",
+    "publishedDate": "2026-03-02T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "6764becf-9b92-4422-9899-69c8fd02df6c",
+        "name": "Accessibility"
+      },
+      {
+        "id": "97f04c9a-d6ba-481a-b539-7c760975737f",
+        "name": "Best Practices"
+      }
+    ],
+    "likeCount": 540,
+    "isLiked": true,
+    "commentCount": 2
+  },
+  {
+    "id": "ed61683c-8629-40c1-a64d-4f52bf3dc481",
+    "title": "Using Observation in iOS Apps #62",
+    "summary": "Learn how Observation simplifies model updates and keeps SwiftUI views in sync with less boilerplate.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-62/640/360",
+    "publishedDate": "2026-03-03T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "09a9a32f-3e7f-4aaa-aa9a-76b1f7d89922",
+        "name": "Concurrency"
+      },
+      {
+        "id": "b36572b7-5860-409a-9ec3-266f09ad462c",
+        "name": "Performance"
+      }
+    ],
+    "likeCount": 547,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "2463ee02-cd8f-4fda-9c41-1fde7a541d02",
+    "title": "Composable Empty States #63",
+    "summary": "Design empty states that explain what to do next while staying reusable across lists, searches, and detail screens.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-63/640/360",
+    "publishedDate": "2026-03-04T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "12898324-3081-41ec-83ba-e9c525297513",
+        "name": "SwiftData"
+      },
+      {
+        "id": "0fe92cad-dc45-4970-8885-f64fd1ce26ec",
+        "name": "Architecture"
+      }
+    ],
+    "likeCount": 554,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "46b71dad-43d9-43e2-8def-44633ed9957e",
+    "title": "Pull to Refresh with refreshable #64",
+    "summary": "Use refreshable to reload data cleanly, handle async work, and keep the refresh experience feeling native.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-64/640/360",
+    "publishedDate": "2026-03-05T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "06b5736c-786d-4bad-977e-e1f9d311d83a",
+        "name": "Lists"
+      },
+      {
+        "id": "5a73fac1-a7df-44c8-80ed-d645845b5f66",
+        "name": "UX"
+      }
+    ],
+    "likeCount": 561,
+    "isLiked": true,
+    "commentCount": 2
+  },
+  {
+    "id": "e2cd94b3-4578-4a8c-a8a0-f94adcc3f826",
+    "title": "Building a Settings Screen #65",
+    "summary": "Compose a settings screen that feels native, stays organized as options grow, and is easy to extend.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-65/640/360",
+    "publishedDate": "2026-03-06T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "2ce8e8d8-874a-41e3-be9a-86424c57cfcd",
+        "name": "Beginner"
+      },
+      {
+        "id": "62e6ae72-76cd-4b24-9671-e686ec89cda1",
+        "name": "State"
+      }
+    ],
+    "likeCount": 568,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "3860acdd-77fd-4b3c-8baa-fb592627085c",
+    "title": "Swipe Actions in Lists #66",
+    "summary": "Add contextual list actions that feel natural on iPhone and remain easy to reason about in code.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-66/640/360",
+    "publishedDate": "2026-03-07T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "0fc2dd4d-436f-42c9-bf42-58ea40fbfc8e",
+        "name": "Layout"
+      },
+      {
+        "id": "011e741f-0590-4c9b-ab6f-e1f9b5011c56",
+        "name": "Design"
+      }
+    ],
+    "likeCount": 575,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "36ac9d32-fb8c-4111-b0b2-c636c85cbd5f",
+    "title": "Charts Basics with Swift Charts #67",
+    "summary": "Build clear, useful charts with Swift Charts by focusing on readable marks, scales, and data storytelling.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-67/640/360",
+    "publishedDate": "2026-03-08T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "a4c5e7f3-1716-4c9d-a6b6-fb3853ddbdf7",
+        "name": "Navigation"
+      },
+      {
+        "id": "a6232320-9fed-452f-b150-865e4159a683",
+        "name": "iOS"
+      }
+    ],
+    "likeCount": 582,
+    "isLiked": true,
+    "commentCount": 2
+  },
+  {
+    "id": "c3e620bd-8883-4a17-8264-5e914faa22d1",
+    "title": "Custom Layouts in SwiftUI #68",
+    "summary": "Create custom layouts when stacks and grids fall short, while keeping sizing and placement logic understandable.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-68/640/360",
+    "publishedDate": "2026-03-09T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "d35fc453-f74c-4706-90d4-b0f43d281c4a",
+        "name": "Animation"
+      },
+      {
+        "id": "f1902efb-d6f8-46a3-b06a-2c65ad4d4840",
+        "name": "Advanced"
+      }
+    ],
+    "likeCount": 589,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "bbb31b73-265f-4a6d-854e-88518c18e5be",
+    "title": "Grid Layouts for Dashboards #69",
+    "summary": "Use grid layouts to build dashboard-style screens that balance dense information with visual structure.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-69/640/360",
+    "publishedDate": "2026-03-10T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "6764becf-9b92-4422-9899-69c8fd02df6c",
+        "name": "Accessibility"
+      },
+      {
+        "id": "97f04c9a-d6ba-481a-b539-7c760975737f",
+        "name": "Best Practices"
+      }
+    ],
+    "likeCount": 596,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "47ad369d-2e53-45aa-b58f-d7a6292e528b",
+    "title": "Matched Geometry Transitions #70",
+    "summary": "Create smooth transitions between related views using matched geometry effects that reinforce spatial continuity.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-70/640/360",
+    "publishedDate": "2026-03-11T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "09a9a32f-3e7f-4aaa-aa9a-76b1f7d89922",
+        "name": "Concurrency"
+      },
+      {
+        "id": "b36572b7-5860-409a-9ec3-266f09ad462c",
+        "name": "Performance"
+      }
+    ],
+    "likeCount": 603,
+    "isLiked": true,
+    "commentCount": 2
+  },
+  {
+    "id": "d1028ebb-44e4-4997-8d69-cc6fc180b619",
+    "title": "Forms that Feel Native #71",
+    "summary": "Design forms that respect platform conventions, reduce friction, and make data entry feel polished.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-71/640/360",
+    "publishedDate": "2026-03-12T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "12898324-3081-41ec-83ba-e9c525297513",
+        "name": "SwiftData"
+      },
+      {
+        "id": "0fe92cad-dc45-4970-8885-f64fd1ce26ec",
+        "name": "Architecture"
+      }
+    ],
+    "likeCount": 610,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "f1594f63-5100-4e2d-8c12-9c8e8d37e927",
+    "title": "Preview-Driven Development #72",
+    "summary": "Use previews as a daily workflow tool to iterate faster, validate states, and catch UI issues earlier.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-72/640/360",
+    "publishedDate": "2026-03-13T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "06b5736c-786d-4bad-977e-e1f9d311d83a",
+        "name": "Lists"
+      },
+      {
+        "id": "5a73fac1-a7df-44c8-80ed-d645845b5f66",
+        "name": "UX"
+      }
+    ],
+    "likeCount": 617,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "de84c0b4-9803-44ef-a927-ded2f88286f1",
+    "title": "Dependency Injection for Views #73",
+    "summary": "Pass dependencies into views cleanly so features stay testable, modular, and easier to evolve.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-73/640/360",
+    "publishedDate": "2026-03-14T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "2ce8e8d8-874a-41e3-be9a-86424c57cfcd",
+        "name": "Beginner"
+      },
+      {
+        "id": "62e6ae72-76cd-4b24-9671-e686ec89cda1",
+        "name": "State"
+      }
+    ],
+    "likeCount": 624,
+    "isLiked": true,
+    "commentCount": 2
+  },
+  {
+    "id": "0c5e66a9-fadc-41d2-a948-6d2c1b7cecdf",
+    "title": "Persistence with SwiftData #74",
+    "summary": "Model, store, and query app data with SwiftData using patterns that feel modern and practical.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-74/640/360",
+    "publishedDate": "2026-03-15T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "0fc2dd4d-436f-42c9-bf42-58ea40fbfc8e",
+        "name": "Layout"
+      },
+      {
+        "id": "011e741f-0590-4c9b-ab6f-e1f9b5011c56",
+        "name": "Design"
+      }
+    ],
+    "likeCount": 631,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "d0e0e15a-aba8-42e7-92fa-eb28bad3a9e5",
+    "title": "Filtering Large Data Sets #75",
+    "summary": "Keep large filtered views responsive with smarter query structure, state handling, and user feedback.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-75/640/360",
+    "publishedDate": "2026-03-16T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "a4c5e7f3-1716-4c9d-a6b6-fb3853ddbdf7",
+        "name": "Navigation"
+      },
+      {
+        "id": "a6232320-9fed-452f-b150-865e4159a683",
+        "name": "iOS"
+      }
+    ],
+    "likeCount": 638,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "b9494ca9-ce19-4508-8ba8-de8874a28257",
+    "title": "Building a Feed with SwiftUI #76",
+    "summary": "Learn how to structure a scalable SwiftUI feed with clear state, reusable rows, and smooth data-driven updates.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-76/640/360",
+    "publishedDate": "2026-03-17T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "d35fc453-f74c-4706-90d4-b0f43d281c4a",
+        "name": "Animation"
+      },
+      {
+        "id": "f1902efb-d6f8-46a3-b06a-2c65ad4d4840",
+        "name": "Advanced"
+      }
+    ],
+    "likeCount": 645,
+    "isLiked": true,
+    "commentCount": 2
+  },
+  {
+    "id": "af81b855-d927-4b90-9400-11117e46fa2d",
+    "title": "Understanding @State and @Binding #77",
+    "summary": "A practical guide to choosing between local state and bindings so updates stay predictable across your views.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-77/640/360",
+    "publishedDate": "2026-03-18T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "6764becf-9b92-4422-9899-69c8fd02df6c",
+        "name": "Accessibility"
+      },
+      {
+        "id": "97f04c9a-d6ba-481a-b539-7c760975737f",
+        "name": "Best Practices"
+      }
+    ],
+    "likeCount": 652,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "5a2fb254-b97e-46ed-91a1-d9d05b55482d",
+    "title": "NavigationStack Patterns #78",
+    "summary": "Explore clean NavigationStack flows, typed navigation state, and patterns that hold up as screens and routes grow.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-78/640/360",
+    "publishedDate": "2026-03-19T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "09a9a32f-3e7f-4aaa-aa9a-76b1f7d89922",
+        "name": "Concurrency"
+      },
+      {
+        "id": "b36572b7-5860-409a-9ec3-266f09ad462c",
+        "name": "Performance"
+      }
+    ],
+    "likeCount": 659,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "66176526-58ec-44fc-9756-84d01ac89f06",
+    "title": "AsyncImage for Remote Media #79",
+    "summary": "Load remote images gracefully with placeholders, error handling, and layouts that stay polished while content streams in.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-79/640/360",
+    "publishedDate": "2026-03-20T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "12898324-3081-41ec-83ba-e9c525297513",
+        "name": "SwiftData"
+      },
+      {
+        "id": "0fe92cad-dc45-4970-8885-f64fd1ce26ec",
+        "name": "Architecture"
+      }
+    ],
+    "likeCount": 666,
+    "isLiked": true,
+    "commentCount": 2
+  },
+  {
+    "id": "993b118a-6497-4a36-a3ee-dad91acb2bdf",
+    "title": "Designing Reusable View Modifiers #80",
+    "summary": "Turn repeated styling and behavior into focused view modifiers that keep SwiftUI screens consistent and easy to maintain.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-80/640/360",
+    "publishedDate": "2026-03-21T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "06b5736c-786d-4bad-977e-e1f9d311d83a",
+        "name": "Lists"
+      },
+      {
+        "id": "5a73fac1-a7df-44c8-80ed-d645845b5f66",
+        "name": "UX"
+      }
+    ],
+    "likeCount": 673,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "ac4da01f-5d77-4faf-9c24-7a6bf775f2fa",
+    "title": "Working with LazyVStack #81",
+    "summary": "Use LazyVStack to render long, scrollable content efficiently without sacrificing readability or composition.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-81/640/360",
+    "publishedDate": "2026-03-22T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "2ce8e8d8-874a-41e3-be9a-86424c57cfcd",
+        "name": "Beginner"
+      },
+      {
+        "id": "62e6ae72-76cd-4b24-9671-e686ec89cda1",
+        "name": "State"
+      }
+    ],
+    "likeCount": 680,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "c1c66a3c-c3cb-485c-928c-9f3d10877aa9",
+    "title": "Creating Accessible SwiftUI Views #82",
+    "summary": "Build SwiftUI interfaces with stronger VoiceOver support, better semantics, and defaults that are easier for everyone to use.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-82/640/360",
+    "publishedDate": "2026-03-23T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "0fc2dd4d-436f-42c9-bf42-58ea40fbfc8e",
+        "name": "Layout"
+      },
+      {
+        "id": "011e741f-0590-4c9b-ab6f-e1f9b5011c56",
+        "name": "Design"
+      }
+    ],
+    "likeCount": 687,
+    "isLiked": true,
+    "commentCount": 2
+  },
+  {
+    "id": "dac4aacf-55c1-454c-94ef-29476b22cb20",
+    "title": "Animating with phaseAnimator #83",
+    "summary": "See how phaseAnimator can coordinate expressive, multi-step animations without turning view code into a tangle.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-83/640/360",
+    "publishedDate": "2026-03-24T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "a4c5e7f3-1716-4c9d-a6b6-fb3853ddbdf7",
+        "name": "Navigation"
+      },
+      {
+        "id": "a6232320-9fed-452f-b150-865e4159a683",
+        "name": "iOS"
+      }
+    ],
+    "likeCount": 694,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "3084cbd6-8634-44c0-88a3-0225095faefb",
+    "title": "Managing Focus with FocusState #84",
+    "summary": "Control text input focus, keyboard flow, and field-to-field transitions with FocusState in a predictable way.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-84/640/360",
+    "publishedDate": "2026-03-25T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "d35fc453-f74c-4706-90d4-b0f43d281c4a",
+        "name": "Animation"
+      },
+      {
+        "id": "f1902efb-d6f8-46a3-b06a-2c65ad4d4840",
+        "name": "Advanced"
+      }
+    ],
+    "likeCount": 701,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "234d2328-1d4e-424f-b924-7aec93f82380",
+    "title": "Sheet Presentation Best Practices #85",
+    "summary": "Present sheets with clearer state management, better dismissal handling, and patterns that scale beyond simple demos.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-85/640/360",
+    "publishedDate": "2026-03-26T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "6764becf-9b92-4422-9899-69c8fd02df6c",
+        "name": "Accessibility"
+      },
+      {
+        "id": "97f04c9a-d6ba-481a-b539-7c760975737f",
+        "name": "Best Practices"
+      }
+    ],
+    "likeCount": 708,
+    "isLiked": true,
+    "commentCount": 2
+  },
+  {
+    "id": "4e71e276-f30d-482a-910f-9a2c35c0848d",
+    "title": "Searchable Lists in SwiftUI #86",
+    "summary": "Add responsive list search with clean filtering logic, sensible empty states, and a better browsing experience.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-86/640/360",
+    "publishedDate": "2026-03-27T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "09a9a32f-3e7f-4aaa-aa9a-76b1f7d89922",
+        "name": "Concurrency"
+      },
+      {
+        "id": "b36572b7-5860-409a-9ec3-266f09ad462c",
+        "name": "Performance"
+      }
+    ],
+    "likeCount": 715,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "9adebd31-6a85-482a-8068-24156d03c5b6",
+    "title": "Using Observation in iOS Apps #87",
+    "summary": "Learn how Observation simplifies model updates and keeps SwiftUI views in sync with less boilerplate.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-87/640/360",
+    "publishedDate": "2026-03-28T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "12898324-3081-41ec-83ba-e9c525297513",
+        "name": "SwiftData"
+      },
+      {
+        "id": "0fe92cad-dc45-4970-8885-f64fd1ce26ec",
+        "name": "Architecture"
+      }
+    ],
+    "likeCount": 722,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "c80b23c3-23e5-493f-b23f-e48205a6c836",
+    "title": "Composable Empty States #88",
+    "summary": "Design empty states that explain what to do next while staying reusable across lists, searches, and detail screens.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-88/640/360",
+    "publishedDate": "2026-03-29T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "06b5736c-786d-4bad-977e-e1f9d311d83a",
+        "name": "Lists"
+      },
+      {
+        "id": "5a73fac1-a7df-44c8-80ed-d645845b5f66",
+        "name": "UX"
+      }
+    ],
+    "likeCount": 729,
+    "isLiked": true,
+    "commentCount": 2
+  },
+  {
+    "id": "acda890c-7e82-4031-a91d-a4a6136a4f6a",
+    "title": "Pull to Refresh with refreshable #89",
+    "summary": "Use refreshable to reload data cleanly, handle async work, and keep the refresh experience feeling native.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-89/640/360",
+    "publishedDate": "2026-03-30T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "2ce8e8d8-874a-41e3-be9a-86424c57cfcd",
+        "name": "Beginner"
+      },
+      {
+        "id": "62e6ae72-76cd-4b24-9671-e686ec89cda1",
+        "name": "State"
+      }
+    ],
+    "likeCount": 736,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "056253ff-5076-4605-9ee1-147f0b471485",
+    "title": "Building a Settings Screen #90",
+    "summary": "Compose a settings screen that feels native, stays organized as options grow, and is easy to extend.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-90/640/360",
+    "publishedDate": "2026-03-31T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "0fc2dd4d-436f-42c9-bf42-58ea40fbfc8e",
+        "name": "Layout"
+      },
+      {
+        "id": "011e741f-0590-4c9b-ab6f-e1f9b5011c56",
+        "name": "Design"
+      }
+    ],
+    "likeCount": 743,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "bbbc46de-c498-42f2-b9b6-40e801b435e5",
+    "title": "Swipe Actions in Lists #91",
+    "summary": "Add contextual list actions that feel natural on iPhone and remain easy to reason about in code.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-91/640/360",
+    "publishedDate": "2026-04-01T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "a4c5e7f3-1716-4c9d-a6b6-fb3853ddbdf7",
+        "name": "Navigation"
+      },
+      {
+        "id": "a6232320-9fed-452f-b150-865e4159a683",
+        "name": "iOS"
+      }
+    ],
+    "likeCount": 750,
+    "isLiked": true,
+    "commentCount": 2
+  },
+  {
+    "id": "89508373-75cc-4786-b80b-e8bef5f2768e",
+    "title": "Charts Basics with Swift Charts #92",
+    "summary": "Build clear, useful charts with Swift Charts by focusing on readable marks, scales, and data storytelling.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-92/640/360",
+    "publishedDate": "2026-04-02T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "d35fc453-f74c-4706-90d4-b0f43d281c4a",
+        "name": "Animation"
+      },
+      {
+        "id": "f1902efb-d6f8-46a3-b06a-2c65ad4d4840",
+        "name": "Advanced"
+      }
+    ],
+    "likeCount": 757,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "448d8707-c3ad-4fed-8001-658f3d79d90f",
+    "title": "Custom Layouts in SwiftUI #93",
+    "summary": "Create custom layouts when stacks and grids fall short, while keeping sizing and placement logic understandable.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-93/640/360",
+    "publishedDate": "2026-04-03T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "6764becf-9b92-4422-9899-69c8fd02df6c",
+        "name": "Accessibility"
+      },
+      {
+        "id": "97f04c9a-d6ba-481a-b539-7c760975737f",
+        "name": "Best Practices"
+      }
+    ],
+    "likeCount": 764,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "4e57757c-9ab7-4350-b8d0-98cb26a90aa1",
+    "title": "Grid Layouts for Dashboards #94",
+    "summary": "Use grid layouts to build dashboard-style screens that balance dense information with visual structure.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-94/640/360",
+    "publishedDate": "2026-04-04T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "09a9a32f-3e7f-4aaa-aa9a-76b1f7d89922",
+        "name": "Concurrency"
+      },
+      {
+        "id": "b36572b7-5860-409a-9ec3-266f09ad462c",
+        "name": "Performance"
+      }
+    ],
+    "likeCount": 771,
+    "isLiked": true,
+    "commentCount": 2
+  },
+  {
+    "id": "2dde1a17-e791-44a6-aaef-60006d93eb69",
+    "title": "Matched Geometry Transitions #95",
+    "summary": "Create smooth transitions between related views using matched geometry effects that reinforce spatial continuity.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-95/640/360",
+    "publishedDate": "2026-04-05T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "12898324-3081-41ec-83ba-e9c525297513",
+        "name": "SwiftData"
+      },
+      {
+        "id": "0fe92cad-dc45-4970-8885-f64fd1ce26ec",
+        "name": "Architecture"
+      }
+    ],
+    "likeCount": 778,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "c3720078-9323-4198-8225-ef60c6fb5ca0",
+    "title": "Forms that Feel Native #96",
+    "summary": "Design forms that respect platform conventions, reduce friction, and make data entry feel polished.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-96/640/360",
+    "publishedDate": "2026-04-06T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "06b5736c-786d-4bad-977e-e1f9d311d83a",
+        "name": "Lists"
+      },
+      {
+        "id": "5a73fac1-a7df-44c8-80ed-d645845b5f66",
+        "name": "UX"
+      }
+    ],
+    "likeCount": 785,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "38d1220d-7194-4008-a462-0a5313f533cf",
+    "title": "Preview-Driven Development #97",
+    "summary": "Use previews as a daily workflow tool to iterate faster, validate states, and catch UI issues earlier.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-97/640/360",
+    "publishedDate": "2026-04-07T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "2ce8e8d8-874a-41e3-be9a-86424c57cfcd",
+        "name": "Beginner"
+      },
+      {
+        "id": "62e6ae72-76cd-4b24-9671-e686ec89cda1",
+        "name": "State"
+      }
+    ],
+    "likeCount": 792,
+    "isLiked": true,
+    "commentCount": 2
+  },
+  {
+    "id": "2af6ab0e-6dc5-4366-906c-d4f224ae4e59",
+    "title": "Dependency Injection for Views #98",
+    "summary": "Pass dependencies into views cleanly so features stay testable, modular, and easier to evolve.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-98/640/360",
+    "publishedDate": "2026-04-08T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "0fc2dd4d-436f-42c9-bf42-58ea40fbfc8e",
+        "name": "Layout"
+      },
+      {
+        "id": "011e741f-0590-4c9b-ab6f-e1f9b5011c56",
+        "name": "Design"
+      }
+    ],
+    "likeCount": 799,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "64ac9bca-2f3e-4562-abfb-ecf69249d51d",
+    "title": "Persistence with SwiftData #99",
+    "summary": "Model, store, and query app data with SwiftData using patterns that feel modern and practical.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-99/640/360",
+    "publishedDate": "2026-04-09T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "a4c5e7f3-1716-4c9d-a6b6-fb3853ddbdf7",
+        "name": "Navigation"
+      },
+      {
+        "id": "a6232320-9fed-452f-b150-865e4159a683",
+        "name": "iOS"
+      }
+    ],
+    "likeCount": 806,
+    "isLiked": false,
+    "commentCount": 2
+  },
+  {
+    "id": "a8d6881b-3e50-4a93-9da9-2f0519af7a19",
+    "title": "Filtering Large Data Sets #100",
+    "summary": "Keep large filtered views responsive with smarter query structure, state handling, and user feedback.",
+    "imageURL": "https://picsum.photos/seed/swiftui-post-100/640/360",
+    "publishedDate": "2026-04-10T09:00:00Z",
+    "tags": [
+      {
+        "id": "7eb8f261-9f10-4e1b-850c-f64f9e27facd",
+        "name": "SwiftUI"
+      },
+      {
+        "id": "d35fc453-f74c-4706-90d4-b0f43d281c4a",
+        "name": "Animation"
+      },
+      {
+        "id": "f1902efb-d6f8-46a3-b06a-2c65ad4d4840",
+        "name": "Advanced"
+      }
+    ],
+    "likeCount": 813,
+    "isLiked": true,
+    "commentCount": 2
+  }
+]

@@ -22,6 +22,7 @@ let package = Package(
             ],
             resources: [
                 .process("posts.json"),
+                .process("post-summaries.json"),
             ]
         ),
     ],

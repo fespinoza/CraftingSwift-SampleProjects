@@ -47,26 +47,16 @@ public protocol Likable {
 }
 
 extension Post {
-    public struct Summary: Decodable, Equatable, Identifiable, PostInformation {
+    public struct Summary: Decodable, Equatable, Identifiable, PostInformation, Likable {
         public let id: PostID
         public let title: String
         public let summary: String
         public let imageURL: URL
         public let publishedDate: Date
         public let tags: [Tag]
-        public var socialInfo: SocialInfo
-
-        public struct SocialInfo: Decodable, Equatable, Likable {
-            public let likeCount: Int
-            public var isLiked: Bool
-            public let commentCount: Int
-
-            public init(likeCount: Int, isLiked: Bool, commentCount: Int) {
-                self.likeCount = likeCount
-                self.isLiked = isLiked
-                self.commentCount = commentCount
-            }
-        }
+        public let likeCount: Int
+        public var isLiked: Bool
+        public let commentCount: Int
 
         public init(
             id: PostID,
@@ -75,7 +65,9 @@ extension Post {
             imageURL: URL,
             publishedDate: Date,
             tags: [Tag],
-            socialInfo: SocialInfo
+            likeCount: Int,
+            isLiked: Bool,
+            commentCount: Int
         ) {
             self.id = id
             self.title = title
@@ -83,7 +75,9 @@ extension Post {
             self.imageURL = imageURL
             self.publishedDate = publishedDate
             self.tags = tags
-            self.socialInfo = socialInfo
+            self.likeCount = likeCount
+            self.isLiked = isLiked
+            self.commentCount = commentCount
         }
 
         public init(post: Post) {
@@ -94,11 +88,9 @@ extension Post {
                 imageURL: post.metadata.imageURL,
                 publishedDate: post.metadata.publishedDate,
                 tags: post.metadata.tags,
-                socialInfo: .init(
-                    likeCount: post.socialInfo.likeCount,
-                    isLiked: post.socialInfo.isLiked,
-                    commentCount: post.socialInfo.commentCount
-                )
+                likeCount: post.socialInfo.likeCount,
+                isLiked: post.socialInfo.isLiked,
+                commentCount: post.socialInfo.commentCount
             )
         }
     }

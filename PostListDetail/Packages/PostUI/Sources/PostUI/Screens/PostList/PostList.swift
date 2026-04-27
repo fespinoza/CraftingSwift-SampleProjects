@@ -44,13 +44,13 @@ struct PostRow: View {
                     PostTagList(tags: post.tags)
 
                     PostSocialStatsView(
-                        likeCount: post.socialInfo.likeCount,
-                        commentCount: post.socialInfo.commentCount
+                        likeCount: post.likeCount,
+                        commentCount: post.commentCount
                     )
                 }
             }
 
-            PostSocialActionsView(post: post.socialInfo)
+            PostSocialActionsView(post: post)
         }
     }
 }
