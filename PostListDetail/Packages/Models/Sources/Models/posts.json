@@ -480,7 +480,7 @@
           "name": "Beginner"
         },
         {
-          "id": "feedf029-d076-4630-9a14-f627a8773a82",
+          "id": "62e6ae72-76cd-4b24-9671-e686ec89cda1",
           "name": "State"
         }
       ]
@@ -534,11 +534,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "a99d787f-5335-409d-badf-b9130689669f",
+          "id": "0fc2dd4d-436f-42c9-bf42-58ea40fbfc8e",
           "name": "Layout"
         },
         {
-          "id": "c105bb6c-e276-44c1-9e49-778c8a89ecc9",
+          "id": "011e741f-0590-4c9b-ab6f-e1f9b5011c56",
           "name": "Design"
         }
       ]
@@ -592,11 +592,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "7e159556-1bfe-42bb-a968-2f8eed1eeebe",
+          "id": "a4c5e7f3-1716-4c9d-a6b6-fb3853ddbdf7",
           "name": "Navigation"
         },
         {
-          "id": "4f6e84ba-91e4-4ba2-a76b-8cc8e57ef9de",
+          "id": "a6232320-9fed-452f-b150-865e4159a683",
           "name": "iOS"
         }
       ]
@@ -708,11 +708,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "a28fbb6b-63b7-4129-88e0-22784e2ad173",
+          "id": "6764becf-9b92-4422-9899-69c8fd02df6c",
           "name": "Accessibility"
         },
         {
-          "id": "9d17781c-fcbd-4c5a-ac3a-889d0a0bdf84",
+          "id": "97f04c9a-d6ba-481a-b539-7c760975737f",
           "name": "Best Practices"
         }
       ]
@@ -766,11 +766,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "27db0afe-ad13-4749-ba47-9d4d7da9edd7",
+          "id": "09a9a32f-3e7f-4aaa-aa9a-76b1f7d89922",
           "name": "Concurrency"
         },
         {
-          "id": "c220dfc9-2e9c-431a-a52a-b18fbf65d71c",
+          "id": "b36572b7-5860-409a-9ec3-266f09ad462c",
           "name": "Performance"
         }
       ]
@@ -824,11 +824,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "37ec4da3-0b9e-4849-b61f-f6a954c0f3e8",
+          "id": "12898324-3081-41ec-83ba-e9c525297513",
           "name": "SwiftData"
         },
         {
-          "id": "1baaaa16-2b46-4295-8b3b-43fe157430e7",
+          "id": "0fe92cad-dc45-4970-8885-f64fd1ce26ec",
           "name": "Architecture"
         }
       ]
@@ -882,11 +882,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "4a85b8fa-b01c-43fe-8f00-ea8ff00c9f8a",
+          "id": "06b5736c-786d-4bad-977e-e1f9d311d83a",
           "name": "Lists"
         },
         {
-          "id": "d5fa01c8-8ce8-4030-9a09-d0319a6a1558",
+          "id": "5a73fac1-a7df-44c8-80ed-d645845b5f66",
           "name": "UX"
         }
       ]
@@ -944,7 +944,7 @@
           "name": "Beginner"
         },
         {
-          "id": "656a7635-d807-42f9-9b64-807181bfc7f4",
+          "id": "62e6ae72-76cd-4b24-9671-e686ec89cda1",
           "name": "State"
         }
       ]
@@ -998,11 +998,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "0c0a7abc-a3b8-402c-9676-50aba62e1264",
+          "id": "0fc2dd4d-436f-42c9-bf42-58ea40fbfc8e",
           "name": "Layout"
         },
         {
-          "id": "52dc1ef7-e419-4f40-9323-540dcb904c00",
+          "id": "011e741f-0590-4c9b-ab6f-e1f9b5011c56",
           "name": "Design"
         }
       ]
@@ -1056,11 +1056,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "c0d27083-83f3-4cee-b11f-b071f68e0d8d",
+          "id": "a4c5e7f3-1716-4c9d-a6b6-fb3853ddbdf7",
           "name": "Navigation"
         },
         {
-          "id": "274e6302-da2f-4200-99cd-4a061cdb5a74",
+          "id": "a6232320-9fed-452f-b150-865e4159a683",
           "name": "iOS"
         }
       ]
@@ -1172,11 +1172,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "f5271971-7b4a-4bc9-b6e4-9d1d32c6bbee",
+          "id": "6764becf-9b92-4422-9899-69c8fd02df6c",
           "name": "Accessibility"
         },
         {
-          "id": "d293136c-1344-4125-8e5f-644fdeba8db6",
+          "id": "97f04c9a-d6ba-481a-b539-7c760975737f",
           "name": "Best Practices"
         }
       ]
@@ -1230,11 +1230,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "5a0b94a5-c0c8-4886-90d8-cb940003c0a9",
+          "id": "09a9a32f-3e7f-4aaa-aa9a-76b1f7d89922",
           "name": "Concurrency"
         },
         {
-          "id": "ca814e53-6bcf-4c2b-91ef-f4c8e54a37d4",
+          "id": "b36572b7-5860-409a-9ec3-266f09ad462c",
           "name": "Performance"
         }
       ]
@@ -1288,11 +1288,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "b3d0f745-28c9-4795-8259-8fac97bf4dc0",
+          "id": "12898324-3081-41ec-83ba-e9c525297513",
           "name": "SwiftData"
         },
         {
-          "id": "e9e3b2cb-f038-4c0c-a559-255e17f30ca9",
+          "id": "0fe92cad-dc45-4970-8885-f64fd1ce26ec",
           "name": "Architecture"
         }
       ]
@@ -1346,11 +1346,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "76f09172-e964-4f97-947f-e8967f82f333",
+          "id": "06b5736c-786d-4bad-977e-e1f9d311d83a",
           "name": "Lists"
         },
         {
-          "id": "1bcc7c2b-a98c-47bc-8062-0cf7219286ae",
+          "id": "5a73fac1-a7df-44c8-80ed-d645845b5f66",
           "name": "UX"
         }
       ]
@@ -1408,7 +1408,7 @@
           "name": "Beginner"
         },
         {
-          "id": "fcbfd813-5736-40b6-a39b-fe2377b9cfbb",
+          "id": "62e6ae72-76cd-4b24-9671-e686ec89cda1",
           "name": "State"
         }
       ]
@@ -1462,11 +1462,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "c8af406a-de83-4df5-b958-13b4eccbb2cb",
+          "id": "0fc2dd4d-436f-42c9-bf42-58ea40fbfc8e",
           "name": "Layout"
         },
         {
-          "id": "eb90c40a-ecfb-4c11-9bfe-42ed330cfad9",
+          "id": "011e741f-0590-4c9b-ab6f-e1f9b5011c56",
           "name": "Design"
         }
       ]
@@ -1520,11 +1520,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "3ca05445-36b8-41ca-aac4-17bd917fe297",
+          "id": "a4c5e7f3-1716-4c9d-a6b6-fb3853ddbdf7",
           "name": "Navigation"
         },
         {
-          "id": "e143cd46-23c5-4843-8f03-1911414eb379",
+          "id": "a6232320-9fed-452f-b150-865e4159a683",
           "name": "iOS"
         }
       ]
@@ -1636,11 +1636,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "72ecacdf-1d34-4603-b3d4-3103758ffe65",
+          "id": "6764becf-9b92-4422-9899-69c8fd02df6c",
           "name": "Accessibility"
         },
         {
-          "id": "4194a7ab-e99d-4fcd-933f-758e7fa51070",
+          "id": "97f04c9a-d6ba-481a-b539-7c760975737f",
           "name": "Best Practices"
         }
       ]
@@ -1694,11 +1694,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "a89752b0-f952-4a31-8180-53bad3b84deb",
+          "id": "09a9a32f-3e7f-4aaa-aa9a-76b1f7d89922",
           "name": "Concurrency"
         },
         {
-          "id": "b0368637-e0eb-4b2a-8c22-38b49c54ddc2",
+          "id": "b36572b7-5860-409a-9ec3-266f09ad462c",
           "name": "Performance"
         }
       ]
@@ -1752,11 +1752,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "73e04f13-26e6-432a-bb5c-454badfd6eda",
+          "id": "12898324-3081-41ec-83ba-e9c525297513",
           "name": "SwiftData"
         },
         {
-          "id": "658628f4-b3ae-4d47-a887-e07f61b33958",
+          "id": "0fe92cad-dc45-4970-8885-f64fd1ce26ec",
           "name": "Architecture"
         }
       ]
@@ -1810,11 +1810,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "56222a88-7536-4cc0-893c-0edd21256f90",
+          "id": "06b5736c-786d-4bad-977e-e1f9d311d83a",
           "name": "Lists"
         },
         {
-          "id": "49d7522c-abd9-45e7-914b-f3cd2f17573a",
+          "id": "5a73fac1-a7df-44c8-80ed-d645845b5f66",
           "name": "UX"
         }
       ]
@@ -1872,7 +1872,7 @@
           "name": "Beginner"
         },
         {
-          "id": "6d10d55f-4245-4ac6-bb93-1bfab73899bb",
+          "id": "62e6ae72-76cd-4b24-9671-e686ec89cda1",
           "name": "State"
         }
       ]
@@ -1926,11 +1926,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "cb1d0443-ac09-4848-8aa5-36e8d168e2f4",
+          "id": "0fc2dd4d-436f-42c9-bf42-58ea40fbfc8e",
           "name": "Layout"
         },
         {
-          "id": "1d003aab-5541-4689-9e8d-25d48f0b4fec",
+          "id": "011e741f-0590-4c9b-ab6f-e1f9b5011c56",
           "name": "Design"
         }
       ]
@@ -1984,11 +1984,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "6d5c5176-77c7-4d80-84d9-36f1b4f41b04",
+          "id": "a4c5e7f3-1716-4c9d-a6b6-fb3853ddbdf7",
           "name": "Navigation"
         },
         {
-          "id": "87aedd68-82a9-4d2b-b583-e9f8bee3c3bf",
+          "id": "a6232320-9fed-452f-b150-865e4159a683",
           "name": "iOS"
         }
       ]
@@ -2100,11 +2100,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "9e3d2877-a76b-41ab-abdc-38280f4a77f9",
+          "id": "6764becf-9b92-4422-9899-69c8fd02df6c",
           "name": "Accessibility"
         },
         {
-          "id": "cc39f919-5b9b-46a4-a822-a161b0a36494",
+          "id": "97f04c9a-d6ba-481a-b539-7c760975737f",
           "name": "Best Practices"
         }
       ]
@@ -2158,11 +2158,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "4f987db4-43a8-4178-b322-b41d8974a9bb",
+          "id": "09a9a32f-3e7f-4aaa-aa9a-76b1f7d89922",
           "name": "Concurrency"
         },
         {
-          "id": "64fa9ed2-ff47-4d35-a549-b7e12adf7c68",
+          "id": "b36572b7-5860-409a-9ec3-266f09ad462c",
           "name": "Performance"
         }
       ]
@@ -2216,11 +2216,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "c4043202-d53e-4efc-8f9c-a94ab8d58f92",
+          "id": "12898324-3081-41ec-83ba-e9c525297513",
           "name": "SwiftData"
         },
         {
-          "id": "d289e5d5-9cf5-4269-b2b2-4febf7d9d75d",
+          "id": "0fe92cad-dc45-4970-8885-f64fd1ce26ec",
           "name": "Architecture"
         }
       ]
@@ -2274,11 +2274,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "351cde1d-6b7d-4205-a65d-fa3939ad4780",
+          "id": "06b5736c-786d-4bad-977e-e1f9d311d83a",
           "name": "Lists"
         },
         {
-          "id": "e4950d15-6fd6-4f3b-b157-aa19b73dec76",
+          "id": "5a73fac1-a7df-44c8-80ed-d645845b5f66",
           "name": "UX"
         }
       ]
@@ -2336,7 +2336,7 @@
           "name": "Beginner"
         },
         {
-          "id": "200b55e8-f923-4a94-93dd-45dbe4ab2be8",
+          "id": "62e6ae72-76cd-4b24-9671-e686ec89cda1",
           "name": "State"
         }
       ]
@@ -2390,11 +2390,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "1e852b97-6743-4482-8d70-de7d727acf49",
+          "id": "0fc2dd4d-436f-42c9-bf42-58ea40fbfc8e",
           "name": "Layout"
         },
         {
-          "id": "834f102b-c8fd-4a34-9e07-4f3e0bd65dca",
+          "id": "011e741f-0590-4c9b-ab6f-e1f9b5011c56",
           "name": "Design"
         }
       ]
@@ -2448,11 +2448,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "05cf616a-dc04-4227-959b-b1be014ac36a",
+          "id": "a4c5e7f3-1716-4c9d-a6b6-fb3853ddbdf7",
           "name": "Navigation"
         },
         {
-          "id": "33886ee4-45b1-47d2-9cdd-da272fc7563c",
+          "id": "a6232320-9fed-452f-b150-865e4159a683",
           "name": "iOS"
         }
       ]
@@ -2564,11 +2564,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "7d7f14f3-f177-47bf-a06f-40df9921a7a4",
+          "id": "6764becf-9b92-4422-9899-69c8fd02df6c",
           "name": "Accessibility"
         },
         {
-          "id": "b648c73a-13a5-4326-98f0-581deaf16048",
+          "id": "97f04c9a-d6ba-481a-b539-7c760975737f",
           "name": "Best Practices"
         }
       ]
@@ -2622,11 +2622,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "04aa8f24-fb1c-44be-836a-e75101c818d4",
+          "id": "09a9a32f-3e7f-4aaa-aa9a-76b1f7d89922",
           "name": "Concurrency"
         },
         {
-          "id": "2536a094-6418-479c-a9f8-76e34990c303",
+          "id": "b36572b7-5860-409a-9ec3-266f09ad462c",
           "name": "Performance"
         }
       ]
@@ -2680,11 +2680,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "5772a826-cd73-4a9a-9b58-90d7219c1ff8",
+          "id": "12898324-3081-41ec-83ba-e9c525297513",
           "name": "SwiftData"
         },
         {
-          "id": "b1fc33d2-4df9-4ffc-a0c0-c71ec946e7fe",
+          "id": "0fe92cad-dc45-4970-8885-f64fd1ce26ec",
           "name": "Architecture"
         }
       ]
@@ -2738,11 +2738,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "7189aa6f-39ea-4563-a711-60f38db03208",
+          "id": "06b5736c-786d-4bad-977e-e1f9d311d83a",
           "name": "Lists"
         },
         {
-          "id": "7749a663-4ee0-4634-b9b6-0f301bcdda56",
+          "id": "5a73fac1-a7df-44c8-80ed-d645845b5f66",
           "name": "UX"
         }
       ]
@@ -2800,7 +2800,7 @@
           "name": "Beginner"
         },
         {
-          "id": "3cfb6862-2614-45c9-92f9-d3476c63f396",
+          "id": "62e6ae72-76cd-4b24-9671-e686ec89cda1",
           "name": "State"
         }
       ]
@@ -2854,11 +2854,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "63c33c94-5eec-443f-ba18-bde2077a08d9",
+          "id": "0fc2dd4d-436f-42c9-bf42-58ea40fbfc8e",
           "name": "Layout"
         },
         {
-          "id": "01cdb6c9-30bd-462c-bf02-116b5e642e50",
+          "id": "011e741f-0590-4c9b-ab6f-e1f9b5011c56",
           "name": "Design"
         }
       ]
@@ -2912,11 +2912,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "9bdb6d35-d4d5-49bf-af95-f0df3399508d",
+          "id": "a4c5e7f3-1716-4c9d-a6b6-fb3853ddbdf7",
           "name": "Navigation"
         },
         {
-          "id": "5291c78f-6881-4e9b-b9d6-d5ec6864b3bf",
+          "id": "a6232320-9fed-452f-b150-865e4159a683",
           "name": "iOS"
         }
       ]
@@ -3028,11 +3028,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "20c9bca1-80bc-4093-85bd-0f97168fa51e",
+          "id": "6764becf-9b92-4422-9899-69c8fd02df6c",
           "name": "Accessibility"
         },
         {
-          "id": "3671d4a9-d0a1-41af-b99e-f2805a2b5d20",
+          "id": "97f04c9a-d6ba-481a-b539-7c760975737f",
           "name": "Best Practices"
         }
       ]
@@ -3086,11 +3086,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "13ae5b4f-0d5c-4d2e-b217-e5520ea27126",
+          "id": "09a9a32f-3e7f-4aaa-aa9a-76b1f7d89922",
           "name": "Concurrency"
         },
         {
-          "id": "7fa9070e-ddfc-46f3-aa63-3bba4bcdfac0",
+          "id": "b36572b7-5860-409a-9ec3-266f09ad462c",
           "name": "Performance"
         }
       ]
@@ -3144,11 +3144,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "fd4bd76d-da1e-437a-a541-3f311ea3bdee",
+          "id": "12898324-3081-41ec-83ba-e9c525297513",
           "name": "SwiftData"
         },
         {
-          "id": "c81c70ab-6323-44d8-af74-8cf7781f4f6d",
+          "id": "0fe92cad-dc45-4970-8885-f64fd1ce26ec",
           "name": "Architecture"
         }
       ]
@@ -3202,11 +3202,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "2fb2e03a-5ad3-40b0-a8e5-6057bd309d4f",
+          "id": "06b5736c-786d-4bad-977e-e1f9d311d83a",
           "name": "Lists"
         },
         {
-          "id": "485132d5-5843-4954-9682-d54b83065f20",
+          "id": "5a73fac1-a7df-44c8-80ed-d645845b5f66",
           "name": "UX"
         }
       ]
@@ -3264,7 +3264,7 @@
           "name": "Beginner"
         },
         {
-          "id": "7e7aac90-8b34-4bd0-816d-e3d63cf804a9",
+          "id": "62e6ae72-76cd-4b24-9671-e686ec89cda1",
           "name": "State"
         }
       ]
@@ -3318,11 +3318,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "526ae5da-2e4d-4d15-af57-02f31ed9b595",
+          "id": "0fc2dd4d-436f-42c9-bf42-58ea40fbfc8e",
           "name": "Layout"
         },
         {
-          "id": "8b41cb55-b53e-4d5d-8929-4131e6dc438e",
+          "id": "011e741f-0590-4c9b-ab6f-e1f9b5011c56",
           "name": "Design"
         }
       ]
@@ -3376,11 +3376,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "5917d245-0a84-4b73-b272-c12815921217",
+          "id": "a4c5e7f3-1716-4c9d-a6b6-fb3853ddbdf7",
           "name": "Navigation"
         },
         {
-          "id": "e764dafc-cb51-4766-8d6c-b0fbd0cce79a",
+          "id": "a6232320-9fed-452f-b150-865e4159a683",
           "name": "iOS"
         }
       ]
@@ -3492,11 +3492,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "22f29b5f-2f48-47a9-b21d-e273266ba4c7",
+          "id": "6764becf-9b92-4422-9899-69c8fd02df6c",
           "name": "Accessibility"
         },
         {
-          "id": "b81c5ceb-afec-4147-95e9-783e72bd5f80",
+          "id": "97f04c9a-d6ba-481a-b539-7c760975737f",
           "name": "Best Practices"
         }
       ]
@@ -3550,11 +3550,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "b84383d5-9b6c-44c9-97ea-131ebd9f284e",
+          "id": "09a9a32f-3e7f-4aaa-aa9a-76b1f7d89922",
           "name": "Concurrency"
         },
         {
-          "id": "c1dbb119-5f6c-4bce-9fa5-8c9bdd4d6fd2",
+          "id": "b36572b7-5860-409a-9ec3-266f09ad462c",
           "name": "Performance"
         }
       ]
@@ -3608,11 +3608,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "497e0608-b113-48e0-85d3-524cea982d52",
+          "id": "12898324-3081-41ec-83ba-e9c525297513",
           "name": "SwiftData"
         },
         {
-          "id": "c781e868-3e60-46b2-8060-cd7e4dad2c8c",
+          "id": "0fe92cad-dc45-4970-8885-f64fd1ce26ec",
           "name": "Architecture"
         }
       ]
@@ -3666,11 +3666,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "17214508-c108-4ad3-b506-699039d8b457",
+          "id": "06b5736c-786d-4bad-977e-e1f9d311d83a",
           "name": "Lists"
         },
         {
-          "id": "a7290db9-d29d-41fa-9d6e-ae7136e8984b",
+          "id": "5a73fac1-a7df-44c8-80ed-d645845b5f66",
           "name": "UX"
         }
       ]
@@ -3728,7 +3728,7 @@
           "name": "Beginner"
         },
         {
-          "id": "bccb82e9-fb86-40f3-b16a-3bae67119928",
+          "id": "62e6ae72-76cd-4b24-9671-e686ec89cda1",
           "name": "State"
         }
       ]
@@ -3782,11 +3782,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "951c133e-b085-41ff-9d2b-959ce1c975b3",
+          "id": "0fc2dd4d-436f-42c9-bf42-58ea40fbfc8e",
           "name": "Layout"
         },
         {
-          "id": "e5833e62-29c4-4c9a-8016-cf74518f7c30",
+          "id": "011e741f-0590-4c9b-ab6f-e1f9b5011c56",
           "name": "Design"
         }
       ]
@@ -3840,11 +3840,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "23bdc511-ec9d-4c67-96e7-d69932d6dd80",
+          "id": "a4c5e7f3-1716-4c9d-a6b6-fb3853ddbdf7",
           "name": "Navigation"
         },
         {
-          "id": "77c98459-959c-4e38-9132-3cbe14b0a76c",
+          "id": "a6232320-9fed-452f-b150-865e4159a683",
           "name": "iOS"
         }
       ]
@@ -3956,11 +3956,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "03027417-9bb5-4708-93ba-20a9562a0266",
+          "id": "6764becf-9b92-4422-9899-69c8fd02df6c",
           "name": "Accessibility"
         },
         {
-          "id": "6dc2305f-42c9-4ef8-b735-82bf4e36622c",
+          "id": "97f04c9a-d6ba-481a-b539-7c760975737f",
           "name": "Best Practices"
         }
       ]
@@ -4014,11 +4014,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "60804662-7f3d-4eed-aed0-71a0b66f3f31",
+          "id": "09a9a32f-3e7f-4aaa-aa9a-76b1f7d89922",
           "name": "Concurrency"
         },
         {
-          "id": "4615ba20-ef10-49c3-be31-73bff2ca65e4",
+          "id": "b36572b7-5860-409a-9ec3-266f09ad462c",
           "name": "Performance"
         }
       ]
@@ -4072,11 +4072,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "e1b7ec20-9bff-4204-8393-e751c4e332d1",
+          "id": "12898324-3081-41ec-83ba-e9c525297513",
           "name": "SwiftData"
         },
         {
-          "id": "7636f221-7f34-49e8-9601-d80b792336b2",
+          "id": "0fe92cad-dc45-4970-8885-f64fd1ce26ec",
           "name": "Architecture"
         }
       ]
@@ -4130,11 +4130,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "c47fe11b-3c3c-4b12-a25a-fae509fc6197",
+          "id": "06b5736c-786d-4bad-977e-e1f9d311d83a",
           "name": "Lists"
         },
         {
-          "id": "9cccbc22-2bc5-40e1-932d-ff8e7794aeef",
+          "id": "5a73fac1-a7df-44c8-80ed-d645845b5f66",
           "name": "UX"
         }
       ]
@@ -4192,7 +4192,7 @@
           "name": "Beginner"
         },
         {
-          "id": "e35b959a-5a77-4fc4-9f59-7d512d5e54a0",
+          "id": "62e6ae72-76cd-4b24-9671-e686ec89cda1",
           "name": "State"
         }
       ]
@@ -4246,11 +4246,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "e94ef70b-0c03-4d42-9eee-990d3cbad2ee",
+          "id": "0fc2dd4d-436f-42c9-bf42-58ea40fbfc8e",
           "name": "Layout"
         },
         {
-          "id": "301031d8-5692-414b-a2b6-ae8e35a64114",
+          "id": "011e741f-0590-4c9b-ab6f-e1f9b5011c56",
           "name": "Design"
         }
       ]
@@ -4304,11 +4304,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "b5ddfe48-6bae-45db-a136-8ba962b7b77b",
+          "id": "a4c5e7f3-1716-4c9d-a6b6-fb3853ddbdf7",
           "name": "Navigation"
         },
         {
-          "id": "8b06f227-0978-49e8-82bb-71bb6c2dc039",
+          "id": "a6232320-9fed-452f-b150-865e4159a683",
           "name": "iOS"
         }
       ]
@@ -4420,11 +4420,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "e9b8a107-7ad2-4891-8d90-b294e8242927",
+          "id": "6764becf-9b92-4422-9899-69c8fd02df6c",
           "name": "Accessibility"
         },
         {
-          "id": "b5afdef1-0b42-4465-a94d-72e42028f806",
+          "id": "97f04c9a-d6ba-481a-b539-7c760975737f",
           "name": "Best Practices"
         }
       ]
@@ -4478,11 +4478,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "b362509d-8f2f-46a2-b2a0-c0d924fc99a7",
+          "id": "09a9a32f-3e7f-4aaa-aa9a-76b1f7d89922",
           "name": "Concurrency"
         },
         {
-          "id": "0b107743-4e5d-4d3b-a01a-2a2dd1490edc",
+          "id": "b36572b7-5860-409a-9ec3-266f09ad462c",
           "name": "Performance"
         }
       ]
@@ -4536,11 +4536,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "2e511bf9-cfe6-4ac4-afe8-ae488592c795",
+          "id": "12898324-3081-41ec-83ba-e9c525297513",
           "name": "SwiftData"
         },
         {
-          "id": "4d26e0ca-5f79-4df3-a99f-c181d82c7ec1",
+          "id": "0fe92cad-dc45-4970-8885-f64fd1ce26ec",
           "name": "Architecture"
         }
       ]
@@ -4594,11 +4594,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "524c864b-413e-43e1-9546-4f91523baf21",
+          "id": "06b5736c-786d-4bad-977e-e1f9d311d83a",
           "name": "Lists"
         },
         {
-          "id": "f1434f48-c57d-4e3c-b887-e793c809cc42",
+          "id": "5a73fac1-a7df-44c8-80ed-d645845b5f66",
           "name": "UX"
         }
       ]
@@ -4656,7 +4656,7 @@
           "name": "Beginner"
         },
         {
-          "id": "db408db1-d585-474b-869f-5113e42d0df7",
+          "id": "62e6ae72-76cd-4b24-9671-e686ec89cda1",
           "name": "State"
         }
       ]
@@ -4710,11 +4710,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "55e484a7-faca-4ab8-9e39-3dc93b34bdd3",
+          "id": "0fc2dd4d-436f-42c9-bf42-58ea40fbfc8e",
           "name": "Layout"
         },
         {
-          "id": "8dd79bf8-256c-4ba5-bcf6-8d0dd27ad10c",
+          "id": "011e741f-0590-4c9b-ab6f-e1f9b5011c56",
           "name": "Design"
         }
       ]
@@ -4768,11 +4768,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "36168319-0b8d-4325-a447-1fc49e0caaa1",
+          "id": "a4c5e7f3-1716-4c9d-a6b6-fb3853ddbdf7",
           "name": "Navigation"
         },
         {
-          "id": "6037ae5c-579e-4820-a02c-81a3df17b655",
+          "id": "a6232320-9fed-452f-b150-865e4159a683",
           "name": "iOS"
         }
       ]
@@ -4884,11 +4884,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "4c721b55-4f2a-470b-96a0-52bce9bac25c",
+          "id": "6764becf-9b92-4422-9899-69c8fd02df6c",
           "name": "Accessibility"
         },
         {
-          "id": "12cacb8e-86a6-4f70-b5e3-4cc855683b78",
+          "id": "97f04c9a-d6ba-481a-b539-7c760975737f",
           "name": "Best Practices"
         }
       ]
@@ -4942,11 +4942,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "aebd855c-1237-4190-b03d-ce429dd106bc",
+          "id": "09a9a32f-3e7f-4aaa-aa9a-76b1f7d89922",
           "name": "Concurrency"
         },
         {
-          "id": "510eb9dd-fb06-4aa2-bf26-59e073a4f9cd",
+          "id": "b36572b7-5860-409a-9ec3-266f09ad462c",
           "name": "Performance"
         }
       ]
@@ -5000,11 +5000,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "65b192e0-0987-45e1-adc3-1f53102d708a",
+          "id": "12898324-3081-41ec-83ba-e9c525297513",
           "name": "SwiftData"
         },
         {
-          "id": "581e8c17-140c-46d9-b488-6ebf63c09d2c",
+          "id": "0fe92cad-dc45-4970-8885-f64fd1ce26ec",
           "name": "Architecture"
         }
       ]
@@ -5058,11 +5058,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "4564451d-ffe1-41a4-bb01-8fc6192500c9",
+          "id": "06b5736c-786d-4bad-977e-e1f9d311d83a",
           "name": "Lists"
         },
         {
-          "id": "7656884c-688d-4673-840a-6c3b65b64bcb",
+          "id": "5a73fac1-a7df-44c8-80ed-d645845b5f66",
           "name": "UX"
         }
       ]
@@ -5120,7 +5120,7 @@
           "name": "Beginner"
         },
         {
-          "id": "b31eb154-cc9c-44a9-be35-d156293bc592",
+          "id": "62e6ae72-76cd-4b24-9671-e686ec89cda1",
           "name": "State"
         }
       ]
@@ -5174,11 +5174,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "526b4a81-d478-4b7a-8c7c-f7e1a39ccf41",
+          "id": "0fc2dd4d-436f-42c9-bf42-58ea40fbfc8e",
           "name": "Layout"
         },
         {
-          "id": "fa10dbe4-a416-4bcf-9b9c-5c1733031a43",
+          "id": "011e741f-0590-4c9b-ab6f-e1f9b5011c56",
           "name": "Design"
         }
       ]
@@ -5232,11 +5232,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "2e05ce3a-bae8-4b4d-98f6-19ef1a14111c",
+          "id": "a4c5e7f3-1716-4c9d-a6b6-fb3853ddbdf7",
           "name": "Navigation"
         },
         {
-          "id": "98751fba-0ae1-42e4-a814-f809356a8b05",
+          "id": "a6232320-9fed-452f-b150-865e4159a683",
           "name": "iOS"
         }
       ]
@@ -5348,11 +5348,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "e0b5b8ef-1ddc-4967-a359-e2d95424bc09",
+          "id": "6764becf-9b92-4422-9899-69c8fd02df6c",
           "name": "Accessibility"
         },
         {
-          "id": "4137af5b-998c-4a0d-8f49-fc97ef4bf492",
+          "id": "97f04c9a-d6ba-481a-b539-7c760975737f",
           "name": "Best Practices"
         }
       ]
@@ -5406,11 +5406,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "07cc66ee-686e-448d-930c-742e01fe066d",
+          "id": "09a9a32f-3e7f-4aaa-aa9a-76b1f7d89922",
           "name": "Concurrency"
         },
         {
-          "id": "e6c219fd-4548-45ea-a3ad-4a532ecb91c0",
+          "id": "b36572b7-5860-409a-9ec3-266f09ad462c",
           "name": "Performance"
         }
       ]
@@ -5464,11 +5464,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "3f3cf1fc-217a-4a24-93da-11d41cb0cd2d",
+          "id": "12898324-3081-41ec-83ba-e9c525297513",
           "name": "SwiftData"
         },
         {
-          "id": "9bd70229-f249-4f8d-91ee-d88db1fcc655",
+          "id": "0fe92cad-dc45-4970-8885-f64fd1ce26ec",
           "name": "Architecture"
         }
       ]
@@ -5522,11 +5522,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "bbe50885-fc0b-453d-941d-7a05a0bdd7a7",
+          "id": "06b5736c-786d-4bad-977e-e1f9d311d83a",
           "name": "Lists"
         },
         {
-          "id": "3f916493-0b42-4f6a-912a-8e702e8a125e",
+          "id": "5a73fac1-a7df-44c8-80ed-d645845b5f66",
           "name": "UX"
         }
       ]
@@ -5584,7 +5584,7 @@
           "name": "Beginner"
         },
         {
-          "id": "14907e0a-fb93-4e13-aed8-827acd9aca5f",
+          "id": "62e6ae72-76cd-4b24-9671-e686ec89cda1",
           "name": "State"
         }
       ]
@@ -5638,11 +5638,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "1aa72bfe-ed97-4b2b-a4a6-6555ad8fa491",
+          "id": "0fc2dd4d-436f-42c9-bf42-58ea40fbfc8e",
           "name": "Layout"
         },
         {
-          "id": "3037d230-8cad-4c76-8edb-97adafd58597",
+          "id": "011e741f-0590-4c9b-ab6f-e1f9b5011c56",
           "name": "Design"
         }
       ]
@@ -5696,11 +5696,11 @@
           "name": "SwiftUI"
         },
         {
-          "id": "39d0cc88-6967-44c7-b4a7-fb79a5e71882",
+          "id": "a4c5e7f3-1716-4c9d-a6b6-fb3853ddbdf7",
           "name": "Navigation"
         },
         {
-          "id": "ec071e5e-4f24-4b0c-a6db-5a0b87d60f00",
+          "id": "a6232320-9fed-452f-b150-865e4159a683",
           "name": "iOS"
         }
       ]
