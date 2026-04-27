@@ -6,7 +6,7 @@ struct DemoContainer: View {
         TabView {
             Tab("Posts", systemImage: "star") {
                 NavigationStack {
-                    PostList(title: "All Posts")
+                    PostListScreen(useCase: .allPosts)
                         .postDestinations()
                 }
             }
@@ -32,9 +32,9 @@ extension View {
             case let .post(id):
                 PostDetailScreen(id: id)
             case .allPosts:
-                PostList(title: "All Posts")
+                PostListScreen(useCase: .allPosts)
             case let .postsForTag(tag):
-                PostList(tag: tag)
+                PostListScreen(useCase: .postForTag(tag))
             }
         }
     }

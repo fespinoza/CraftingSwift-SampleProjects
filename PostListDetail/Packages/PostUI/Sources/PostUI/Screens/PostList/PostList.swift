@@ -2,21 +2,7 @@ import SwiftUI
 import Models
 
 struct PostList: View {
-    let title: String
-    let tag: Post.Tag?
-    @State var posts: [Post] = []
-
-    init(title: String, posts: [Post] = []) {
-        self.title = title
-        self.posts = posts
-        self.tag = nil
-    }
-
-    init(tag: Post.Tag, posts: [Post] = []) {
-        self.tag = tag
-        self.title = tag.name
-        self.posts = posts
-    }
+    let posts: [Post.Summary]
 
     var body: some View {
         List(posts) { post in
@@ -26,33 +12,16 @@ struct PostList: View {
             .navigationLinkIndicatorVisibility(.hidden)
         }
         .listStyle(.plain)
-        .task { loadTestData() }
-        .navigationTitle(title)
-    }
-
-    func loadTestData() {
-        do {
-            let testData = TestData()
-            try testData.loadData()
-
-            if let tag {
-                posts = Array(testData.posts.filter { $0.metadata.tags.contains(tag) })
-            } else {
-                posts = Array(testData.posts.prefix(upTo: 10))
-            }
-        } catch {
-            dump(error)
-        }
     }
 }
 
 struct PostRow: View {
-    let post: Post
+    let post: Post.Summary
 
     var body: some View {
         VStack(spacing: 20) {
             HStack(alignment: .top) {
-                AsyncImage(url: post.metadata.imageURL) { image in
+                AsyncImage(url: post.imageURL) { image in
                     image
                         .resizable()
                         .aspectRatio(contentMode: .fill)
@@ -63,28 +32,25 @@ struct PostRow: View {
                 .clipped()
 
                 VStack(alignment: .leading) {
-                    Text(post.metadata.publishedDate.formatted(date: .abbreviated, time: .omitted))
+                    Text(post.publishedDate.formatted(date: .abbreviated, time: .omitted))
                         .font(.caption)
 
-                    Text(post.metadata.title)
+                    Text(post.title)
                         .bold()
 
-                    Text(post.metadata.summary)
+                    Text(post.summary)
                         .foregroundStyle(.secondary)
 
-                    PostTagList(tags: post.metadata.tags)
+                    PostTagList(tags: post.tags)
 
-                    PostSocialStatsView(socialInfo: post.socialInfo)
+                    PostSocialStatsView(
+                        likeCount: post.socialInfo.likeCount,
+                        commentCount: post.socialInfo.commentCount
+                    )
                 }
             }
 
-            PostSocialActionsView(post: post)
+            PostSocialActionsView(post: post.socialInfo)
         }
-    }
-}
-
-#Preview {
-    NavigationStack {
-        PostList(title: "All Posts")
     }
 }

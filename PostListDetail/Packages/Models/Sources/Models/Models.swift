@@ -32,8 +32,78 @@ public struct PostItem: Decodable, Identifiable {
     public var id: PostID { metadata.id }
 }
 
+public protocol PostInformation {
+    var id: PostID { get }
+    var title: String { get }
+    var summary: String { get }
+    var imageURL: URL { get }
+    var publishedDate: Date { get }
+    var tags: [Post.Tag] { get }
+}
+
+public protocol Likable {
+    var likeCount: Int { get }
+    var isLiked: Bool { get set }
+}
+
 extension Post {
-    public struct Metadata: Decodable, Equatable {
+    public struct Summary: Decodable, Equatable, Identifiable, PostInformation {
+        public let id: PostID
+        public let title: String
+        public let summary: String
+        public let imageURL: URL
+        public let publishedDate: Date
+        public let tags: [Tag]
+        public var socialInfo: SocialInfo
+
+        public struct SocialInfo: Decodable, Equatable, Likable {
+            public let likeCount: Int
+            public var isLiked: Bool
+            public let commentCount: Int
+
+            public init(likeCount: Int, isLiked: Bool, commentCount: Int) {
+                self.likeCount = likeCount
+                self.isLiked = isLiked
+                self.commentCount = commentCount
+            }
+        }
+
+        public init(
+            id: PostID,
+            title: String,
+            summary: String,
+            imageURL: URL,
+            publishedDate: Date,
+            tags: [Tag],
+            socialInfo: SocialInfo
+        ) {
+            self.id = id
+            self.title = title
+            self.summary = summary
+            self.imageURL = imageURL
+            self.publishedDate = publishedDate
+            self.tags = tags
+            self.socialInfo = socialInfo
+        }
+
+        public init(post: Post) {
+            self.init(
+                id: post.metadata.id,
+                title: post.metadata.title,
+                summary: post.metadata.summary,
+                imageURL: post.metadata.imageURL,
+                publishedDate: post.metadata.publishedDate,
+                tags: post.metadata.tags,
+                socialInfo: .init(
+                    likeCount: post.socialInfo.likeCount,
+                    isLiked: post.socialInfo.isLiked,
+                    commentCount: post.socialInfo.commentCount
+                )
+            )
+        }
+    }
+
+    public struct Metadata: Decodable, Equatable, Identifiable, PostInformation {
         public let id: PostID
         public let title: String
         public let summary: String
@@ -61,9 +131,9 @@ extension Post {
         }
     }
 
-    public struct SocialInfo: Decodable, Equatable {
+    public struct SocialInfo: Decodable, Equatable, Likable {
         public let likeCount: Int
-        public let isLiked: Bool
+        public var isLiked: Bool
         public let comments: [Comment]
 
         public var commentCount: Int { comments.count }
@@ -105,9 +175,9 @@ extension Post.Comment {
         }
     }
 
-    public struct SocialInfo: Decodable, Equatable {
+    public struct SocialInfo: Decodable, Equatable, Likable {
         public let likeCount: Int
-        public let isLiked: Bool
+        public var isLiked: Bool
 
         public init(likeCount: Int, isLiked: Bool) {
             self.likeCount = likeCount

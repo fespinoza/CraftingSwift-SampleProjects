@@ -2,12 +2,13 @@ import SwiftUI
 import Models
 
 struct PostSocialStatsView: View {
-    let socialInfo: Post.SocialInfo
+    let likeCount: Int
+    let commentCount: Int
 
     var body: some View {
         HStack {
-            Text("\(socialInfo.likeCount) likes")
-            Text("\(socialInfo.commentCount) comments")
+            Text("\(likeCount) likes")
+            Text("\(commentCount) comments")
         }
         .font(.caption)
 

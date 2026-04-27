@@ -32,9 +32,12 @@ struct PostDetailView: View {
 
                     Divider()
 
-                    PostSocialStatsView(socialInfo: post.socialInfo)
+                    PostSocialStatsView(
+                        likeCount: post.socialInfo.likeCount,
+                        commentCount: post.socialInfo.commentCount
+                    )
 
-                    PostSocialActionsView(post: post)
+                    PostSocialActionsView(post: post.socialInfo)
 
                     Divider()
 

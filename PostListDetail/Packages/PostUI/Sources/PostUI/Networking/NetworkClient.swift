@@ -6,10 +6,10 @@ import Models
  */
 
 struct NetworkClient {
-    let fetchPostSummaries: () async throws -> [Post.Metadata] // Pagination
+    let fetchPostSummaries: () async throws -> [Post.Summary] // Pagination
     let fetchPost: (PostID) async throws -> Post
     let fetchTags: () async throws -> [Post.Tag]
-    let searchPosts: (String) async throws -> [Post.Metadata] // Pagination
+    let searchPosts: (String) async throws -> [Post.Summary] // Pagination
 
     let likePost: (PostID) async throws -> Void
     let unlikePost: (PostID) async throws -> Void
@@ -28,7 +28,7 @@ struct NetworkClient {
         return .init(
             fetchPostSummaries: {
                 try await randomDelay()
-                return testData.posts.map(\.metadata)
+                return testData.posts.map { Post.Summary(post: $0) }
             },
             fetchPost: { postId in
                 try await randomDelay()
@@ -46,7 +46,7 @@ struct NetworkClient {
                 return testData
                     .posts
                     .filter { $0.metadata.title.localizedCaseInsensitiveContains(query) }
-                    .map(\.metadata)
+                    .map { Post.Summary(post: $0) }
 
             },
             likePost: { _ in },
@@ -57,10 +57,10 @@ struct NetworkClient {
     }
 
     static func manualDebug(
-        fetchPostSummaries: @escaping () async throws -> [Post.Metadata] = { fatalError("❌ not implemented") },
+        fetchPostSummaries: @escaping () async throws -> [Post.Summary] = { fatalError("❌ not implemented") },
         fetchPost: @escaping (PostID) async throws -> Post = { _ in fatalError("❌ not implemented") },
         fetchTags: @escaping () async throws -> [Post.Tag] = { fatalError("❌ not implemented") },
-        searchPosts: @escaping (String) async throws -> [Post.Metadata] = { _ in fatalError("❌ not implemented") },
+        searchPosts: @escaping (String) async throws -> [Post.Summary] = { _ in fatalError("❌ not implemented") },
         likePost: @escaping (PostID) async throws -> Void = { _ in fatalError("❌ not implemented") },
         unlikePost: @escaping (PostID) async throws -> Void = { _ in fatalError("❌ not implemented") },
         addComment: @escaping (PostID, String) async throws -> Void = { _,_ in fatalError("❌ not implemented") },
