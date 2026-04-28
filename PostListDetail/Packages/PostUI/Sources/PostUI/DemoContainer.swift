@@ -11,9 +11,10 @@ struct DemoContainer: View {
                 }
             }
 
-            Tab("Search", systemImage: "magnifyingglass") {
+            Tab("Tags", systemImage: "list") {
                 NavigationStack {
-                    PostSearchView()
+//                    PostTagsGalleryView(tags: data.tags, counts: data.postByTagCount)
+                    Text("TODO")
                         .postDestinations()
                 }
             }

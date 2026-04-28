@@ -23,6 +23,8 @@ struct PostSocialActionsView: View {
         }
     }
 
+    // This state is not synced!
+
     func toggleLike() {
         let originalValue = post.isLiked
 
@@ -52,3 +54,38 @@ struct PostSocialActionsView: View {
     }
 }
 
+@Observable
+class PostSocialLocator {
+    private var cache: [PostID: PostSocialState] = [:]
+
+    func state(for postID: PostID) -> PostSocialState {
+        if let state = cache[postID] {
+            return state
+        } else {
+            let state = PostSocialState(postId: postID, isLiked: false, likeCount: 0)
+            cache[postID] = state
+            state.container = self
+            return state
+        }
+    }
+
+    func setValues(for post: Post.Summary) {
+        let state = state(for: post.id)
+        state.isLiked = post.isLiked
+        state.likeCount = post.likeCount
+    }
+}
+
+@Observable
+class PostSocialState {
+    let postId: PostID
+    var isLiked: Bool
+    var likeCount: Int
+    weak var container: PostSocialLocator?
+
+    init(postId: PostID, isLiked: Bool, likeCount: Int) {
+        self.postId = postId
+        self.isLiked = isLiked
+        self.likeCount = likeCount
+    }
+}
