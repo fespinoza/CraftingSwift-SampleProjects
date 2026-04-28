@@ -50,7 +50,7 @@ struct PostRow: View {
                 }
             }
 
-            PostSocialActionsView(post: post)
+            PostSocialActionsView(post: post, postId: post.id)
         }
     }
 }

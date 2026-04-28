@@ -1,9 +1,11 @@
 import Foundation
+import Tagged
 
 public class TestData {
     public var posts: [Post]
     public var tags: [Post.Tag]
     public var postSummaries: [Post.Summary]
+    public var postByTagCount: [TagID: Int] = [:]
 
     public init(posts: [Post] = [], tags: [Post.Tag] = [], postSummaries: [Post.Summary] = []) {
         self.posts = posts
@@ -37,6 +39,8 @@ public class TestData {
 
         posts.forEach {
             $0.metadata.tags.forEach { tag in
+                postByTagCount[tag.id, default: 0] += 1
+                
                 if uniqueTagNames.contains(tag.name) {
                     return
                 }

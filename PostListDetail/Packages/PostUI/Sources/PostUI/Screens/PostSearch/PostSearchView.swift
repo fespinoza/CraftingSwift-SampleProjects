@@ -3,9 +3,15 @@ import Models
 
 struct PostSearchView: View {
     @State private var search: String = ""
+    let data: TestData
+
+    init() {
+        self.data = TestData()
+        try! data.loadData()
+    }
 
     var body: some View {
-        PostTagsGalleryView(tags: tags(), counts: [:])
+        PostTagsGalleryView(tags: data.tags, counts: data.postByTagCount)
             .overlay {
                 if search != "" {
                     SearchResultsView(for: search)
@@ -17,12 +23,6 @@ struct PostSearchView: View {
                 prompt: Text("Search Post by Name, Content or Author")
             )
     }
-
-    func tags() -> [Post.Tag] {
-        let data = TestData()
-        try! data.loadData()
-        return data.tags
-    }
 }
 
 struct SearchResultsView: View {
@@ -33,7 +33,9 @@ struct SearchResultsView: View {
     }
 
     var body: some View {
-        Text("Search Results for: \(search)")
+        PostListScreen(useCase: .search(search))
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(Color(uiColor: .systemBackground))
     }
 }
 

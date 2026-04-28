@@ -59,14 +59,19 @@ struct PostListScreen: View {
         switch useCase {
         case .allPosts:
             "All Posts"
+
         case .postForTag(let tag):
             "#\(tag.name)'s Posts"
+
+        case let .search(query):
+            "Search: \(query)"
         }
     }
 
     enum UseCase {
         case allPosts
         case postForTag(Post.Tag)
+        case search(String)
     }
 }
 

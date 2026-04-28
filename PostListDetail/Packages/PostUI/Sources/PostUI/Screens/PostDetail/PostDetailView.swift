@@ -37,7 +37,7 @@ struct PostDetailView: View {
                         commentCount: post.socialInfo.commentCount
                     )
 
-                    PostSocialActionsView(post: post.socialInfo)
+                    PostSocialActionsView(post: post.socialInfo, postId: post.id)
 
                     Divider()
 

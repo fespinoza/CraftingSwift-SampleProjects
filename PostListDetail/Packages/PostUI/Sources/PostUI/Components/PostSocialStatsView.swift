@@ -11,6 +11,5 @@ struct PostSocialStatsView: View {
             Text("\(commentCount) comments")
         }
         .font(.caption)
-
     }
 }
