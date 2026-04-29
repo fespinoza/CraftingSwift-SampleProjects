@@ -11,10 +11,9 @@ struct DemoContainer: View {
                 }
             }
 
-            Tab("Tags", systemImage: "list") {
+            Tab("Tags", systemImage: "tag") {
                 NavigationStack {
-//                    PostTagsGalleryView(tags: data.tags, counts: data.postByTagCount)
-                    Text("TODO")
+                    PostTagsGalleryScreen()
                         .postDestinations()
                 }
             }

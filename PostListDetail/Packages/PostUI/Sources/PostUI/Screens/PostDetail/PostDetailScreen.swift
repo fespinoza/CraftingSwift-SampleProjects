@@ -30,16 +30,20 @@ struct PostDetailScreen: View {
             }
         }
         .animation(.easeInOut, value: loadingState)
-        .task {
-            loadingState = .loading
-            try? data.loadData()
-            try? await Task.sleep(for: .seconds(2))
+        .task { await initialLoad() }
+    }
 
-            if let post = data.posts.first(where: { $0.id == id }) {
-                loadingState = .dataLoaded(post)
-            } else {
-                loadingState = .error("Post not found \(id)")
-            }
+    func initialLoad() async {
+        guard case .idle = loadingState else { return }
+
+        loadingState = .loading
+        try? data.loadData()
+        try? await Task.sleep(for: .seconds(2))
+
+        if let post = data.posts.first(where: { $0.id == id }) {
+            loadingState = .dataLoaded(post)
+        } else {
+            loadingState = .error("Post not found \(id)")
         }
     }
 }

@@ -5,10 +5,15 @@ import Models
  - Post.Metadata is "lightweight", unlike the full Post data
  */
 
+struct TagsWithCounts: Decodable {
+    let tags: [Post.Tag]
+    let counts: [TagID: Int]
+}
+
 struct NetworkClient {
     let fetchPostSummaries: () async throws -> [Post.Summary] // Pagination
     let fetchPost: (PostID) async throws -> Post
-    let fetchTags: () async throws -> [Post.Tag]
+    let fetchTagsWithCounts: () async throws -> TagsWithCounts
     let searchPosts: (String) async throws -> [Post.Summary] // Pagination
 
     let likePost: (PostID) async throws -> Void
@@ -18,7 +23,8 @@ struct NetworkClient {
     let removeComment: (CommentID) async throws -> Void
 
     private static func randomDelay() async throws {
-        try await Task.sleep(for: .seconds((1...4).randomElement() ?? 1))
+        try await Task.sleep(for: .seconds(1))
+//        try await Task.sleep(for: .seconds((1...4).randomElement() ?? 1))
     }
 
     static func debug() -> Self {
@@ -37,9 +43,12 @@ struct NetworkClient {
                 }
                 return post
             },
-            fetchTags: {
+            fetchTagsWithCounts: {
                 try await randomDelay()
-                return testData.tags
+                return .init(
+                    tags: testData.tags,
+                    counts: testData.postByTagCount
+                )
             },
             searchPosts: { query in
                 try await randomDelay()
@@ -59,7 +68,7 @@ struct NetworkClient {
     static func manualDebug(
         fetchPostSummaries: @escaping () async throws -> [Post.Summary] = { fatalError("❌ not implemented") },
         fetchPost: @escaping (PostID) async throws -> Post = { _ in fatalError("❌ not implemented") },
-        fetchTags: @escaping () async throws -> [Post.Tag] = { fatalError("❌ not implemented") },
+        fetchTagsWithCounts: @escaping () async throws -> TagsWithCounts = { fatalError("❌ not implemented") },
         searchPosts: @escaping (String) async throws -> [Post.Summary] = { _ in fatalError("❌ not implemented") },
         likePost: @escaping (PostID) async throws -> Void = { _ in fatalError("❌ not implemented") },
         unlikePost: @escaping (PostID) async throws -> Void = { _ in fatalError("❌ not implemented") },
@@ -69,7 +78,7 @@ struct NetworkClient {
         self.init(
             fetchPostSummaries: fetchPostSummaries,
             fetchPost: fetchPost,
-            fetchTags: fetchTags,
+            fetchTagsWithCounts: fetchTagsWithCounts,
             searchPosts: searchPosts,
             likePost: likePost,
             unlikePost: unlikePost,

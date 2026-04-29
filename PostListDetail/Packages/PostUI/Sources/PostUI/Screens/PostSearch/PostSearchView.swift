@@ -1,6 +1,46 @@
 import SwiftUI
 import Models
 
+struct PostTagsGalleryScreen: View {
+    @State private var listState: ListState = .idle
+    @Environment(\.networkClient.fetchTagsWithCounts) var fetchTagsWithCounts
+    @State private var tags: [Post.Tag] = []
+    @State private var counts: [TagID: Int] = [:]
+
+    var body: some View {
+        Group {
+            switch listState {
+            case .idle:
+                Color.clear
+            case .loading:
+                ProgressView()
+            case .dataLoaded:
+                PostTagsGalleryView(tags: tags, counts: counts)
+            case .error(let error):
+                Text(error.localizedDescription)
+            }
+        }
+        .task { await initialLoad() }
+        .navigationTitle("Tags")
+    }
+
+    func initialLoad() async {
+        guard case .idle = listState else {
+            return
+        }
+        listState = .loading
+
+        do {
+            let data = try await fetchTagsWithCounts()
+            self.tags = data.tags
+            self.counts = data.counts
+            listState = .dataLoaded
+        } catch {
+            listState = .error(error)
+        }
+    }
+}
+
 struct PostSearchView: View {
     @State private var search: String = ""
     let data: TestData
@@ -62,7 +102,6 @@ struct PostTagsGalleryView: View {
             .padding()
         }
         .scrollBounceBehavior(.basedOnSize)
-        .navigationTitle("Browse Post Per Tag")
     }
 }
 
