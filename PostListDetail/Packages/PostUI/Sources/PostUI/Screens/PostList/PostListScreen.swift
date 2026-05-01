@@ -31,7 +31,7 @@ struct PostListScreen: View {
                 ProgressView()
 
             case .dataLoaded:
-                PostList(posts: list)
+                PostList(posts: $list)
 
             case let .error(error):
                 Text(error.localizedDescription)

@@ -2,7 +2,11 @@ import SwiftUI
 import Models
 
 struct PostDetailView: View {
-    let post: Post
+    @State var post: Post
+
+    init(post: Post) {
+        self._post = .init(initialValue: post)
+    }
 
     var body: some View {
         ScrollView {
@@ -37,7 +41,7 @@ struct PostDetailView: View {
                         commentCount: post.socialInfo.commentCount
                     )
 
-                    PostSocialActionsView(post: post.socialInfo, postId: post.id)
+                    _AltInitialPostSocialActions(post: $post)
 
                     Divider()
 
@@ -73,27 +77,27 @@ struct PostDetailView: View {
     }
 }
 
-private struct Demo: View {
-    @State var post: Post?
-
-    var body: some View {
-        Group {
-            if let post {
-                PostDetailView(post: post)
-            } else {
-                Text("Soon a post")
-            }
-        }
-        .task {
-            let data = TestData()
-            try? data.loadData()
-            post = try? data.post
-        }
-    }
-}
-
-#Preview {
-    NavigationStack {
-        Demo()
-    }
-}
+//private struct Demo: View {
+//    @State var post: Post?
+//
+//    var body: some View {
+//        Group {
+//            if let post {
+//                PostDetailView(post: post)
+//            } else {
+//                Text("Soon a post")
+//            }
+//        }
+//        .task {
+//            let data = TestData()
+//            try? data.loadData()
+//            post = try? data.post
+//        }
+//    }
+//}
+//
+//#Preview {
+//    NavigationStack {
+//        Demo()
+//    }
+//}

@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9B74E4652FA518F000512EB4 /* PostUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9B74E4642FA518F000512EB4 /* PostUI */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		9B87D5802F8FFE690074DEFF /* PostListDetail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PostListDetail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -28,17 +32,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B74E4652FA518F000512EB4 /* PostUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B74E4632FA518F000512EB4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9B87D5772F8FFE690074DEFF = {
 			isa = PBXGroup;
 			children = (
 				9B87D58E2F9001040074DEFF /* Packages */,
 				9B87D5822F8FFE690074DEFF /* PostListDetail */,
+				9B74E4632FA518F000512EB4 /* Frameworks */,
 				9B87D5812F8FFE690074DEFF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,6 +85,7 @@
 			);
 			name = PostListDetail;
 			packageProductDependencies = (
+				9B74E4642FA518F000512EB4 /* PostUI */,
 			);
 			productName = PostListDetail;
 			productReference = 9B87D5802F8FFE690074DEFF /* PostListDetail.app */;
@@ -358,6 +372,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9B74E4642FA518F000512EB4 /* PostUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PostUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9B87D5782F8FFE690074DEFF /* Project object */;
 }

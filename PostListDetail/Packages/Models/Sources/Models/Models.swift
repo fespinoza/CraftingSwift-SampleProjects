@@ -8,7 +8,7 @@ public typealias AuthorID = Tagged<Post.Comment.Author, UUID>
 
 public struct Post: Decodable, Identifiable, Equatable {
     public let metadata: Metadata
-    public let socialInfo: SocialInfo
+    public var socialInfo: SocialInfo
     public let content: AttributedString
 
     public init(metadata: Metadata, socialInfo: SocialInfo, content: AttributedString) {

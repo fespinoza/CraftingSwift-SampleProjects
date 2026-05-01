@@ -2,12 +2,12 @@ import SwiftUI
 import Models
 
 struct PostList: View {
-    let posts: [Post.Summary]
+    @Binding var posts: [Post.Summary]
 
     var body: some View {
-        List(posts) { post in
+        List($posts) { $post in
             NavigationLink(value: PostRoute.post(id: post.id)) {
-                PostRow(post: post)
+                PostRow(post: $post)
             }
             .navigationLinkIndicatorVisibility(.hidden)
         }
@@ -16,7 +16,7 @@ struct PostList: View {
 }
 
 struct PostRow: View {
-    let post: Post.Summary
+    @Binding var post: Post.Summary
 
     var body: some View {
         VStack(spacing: 20) {
@@ -50,7 +50,7 @@ struct PostRow: View {
                 }
             }
 
-            PostSocialActionsView(post: post, postId: post.id)
+            PostSocialActions(postSummary: $post)
         }
     }
 }
