@@ -34,13 +34,24 @@ struct NetworkClient {
         return .init(
             fetchPostSummaries: {
                 try await randomDelay()
-                return testData.posts.map { Post.Summary(post: $0) }
+                let result = testData.posts.map { Post.Summary(post: $0) }
+
+                Task { @MainActor [result] in
+                    result.forEach { PostSocialLocator.shared.setValues(for: $0) }
+                }
+
+                return result
             },
             fetchPost: { postId in
                 try await randomDelay()
                 guard let post = testData.posts.first(where: { $0.id == postId }) else {
                     throw DebugNetworkError.postNotFound(postId)
                 }
+
+                Task { @MainActor [post] in
+                    PostSocialLocator.shared.setValues(for: post)
+                }
+
                 return post
             },
             fetchTagsWithCounts: {

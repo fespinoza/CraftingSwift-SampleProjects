@@ -50,7 +50,8 @@ struct PostRow: View {
                 }
             }
 
-            PostSocialActions(postSummary: $post)
+//            PostSocialActions(postSummary: $post)
+            _ObservablePostSocialActionsView(postID: post.id)
         }
     }
 }

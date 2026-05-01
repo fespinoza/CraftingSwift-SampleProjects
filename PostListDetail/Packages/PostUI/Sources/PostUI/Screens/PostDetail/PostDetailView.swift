@@ -41,7 +41,8 @@ struct PostDetailView: View {
                         commentCount: post.socialInfo.commentCount
                     )
 
-                    _AltInitialPostSocialActions(post: $post)
+//                    _AltInitialPostSocialActions(post: $post)
+                    _ObservablePostSocialActionsView(postID: post.id)
 
                     Divider()
 

@@ -188,8 +188,65 @@ struct _PostSocialActionsView: View {
     }
 }
 
-@Observable
+struct _ObservablePostSocialActionsView: View {
+//    let postID: PostID
+    let post: PostSocialState
+    @Environment(\.networkClient) var networkClient
+
+    init(postID: PostID) {
+        post = PostSocialLocator.shared.state(for: postID)
+    }
+
+    var body: some View {
+        HStack {
+            Button("Like", systemImage: "hand.thumbsup", action: toggleLike)
+                .symbolVariant(post.isLiked ? .fill : .none)
+                .frame(maxWidth: .infinity)
+                .buttonStyle(.borderless)
+
+            Button("Comment", systemImage: "bubble.left.and.bubble.right", action: addComment)
+                .frame(maxWidth: .infinity)
+        }
+    }
+
+    // This state is not synced!
+
+    func toggleLike() {
+        let originalValue = post.isLiked
+
+        post.isLiked.toggle()
+
+        if originalValue {
+            Task {
+                do {
+                    try await networkClient.unlikePost(post.postId)
+                } catch {
+                    post.isLiked = originalValue
+                }
+            }
+        } else {
+            Task {
+                do {
+                    try await networkClient.likePost(post.postId)
+                } catch {
+                    post.isLiked = originalValue
+                }
+            }
+        }
+    }
+
+    func addComment() {
+
+    }
+}
+
+
+@Observable @MainActor
 class PostSocialLocator {
+    private init() {}
+
+    static let shared: PostSocialLocator = .init()
+
     private var cache: [PostID: PostSocialState] = [:]
 
     func state(for postID: PostID) -> PostSocialState {
@@ -198,7 +255,7 @@ class PostSocialLocator {
         } else {
             let state = PostSocialState(postId: postID, isLiked: false, likeCount: 0)
             cache[postID] = state
-            state.container = self
+            state.container = self // why this?
             return state
         }
     }
@@ -207,6 +264,12 @@ class PostSocialLocator {
         let state = state(for: post.id)
         state.isLiked = post.isLiked
         state.likeCount = post.likeCount
+    }
+
+    func setValues(for post: Post) {
+        let state = state(for: post.id)
+        state.isLiked = post.socialInfo.isLiked
+        state.likeCount = post.socialInfo.likeCount
     }
 }
 
@@ -223,3 +286,13 @@ class PostSocialState {
         self.likeCount = likeCount
     }
 }
+
+/* Question, if I update a `PostSocialState`, do `PostSocialLocator` will be marked as updated? */
+
+/*
+
+- TODO: update the state when relevant network request are done
+- TODO: like count should update
+- 
+
+ */

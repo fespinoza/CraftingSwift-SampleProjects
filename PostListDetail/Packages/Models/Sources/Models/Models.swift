@@ -6,7 +6,7 @@ public typealias TagID = Tagged<Post.Tag, UUID>
 public typealias CommentID = Tagged<Post.Comment, UUID>
 public typealias AuthorID = Tagged<Post.Comment.Author, UUID>
 
-public struct Post: Decodable, Identifiable, Equatable {
+public struct Post: Decodable, Identifiable, Equatable, Sendable {
     public let metadata: Metadata
     public var socialInfo: SocialInfo
     public let content: AttributedString
@@ -47,7 +47,7 @@ public protocol Likable {
 }
 
 extension Post {
-    public struct Summary: Decodable, Equatable, Identifiable, PostInformation, Likable {
+    public struct Summary: Decodable, Equatable, Identifiable, Sendable, PostInformation, Likable {
         public let id: PostID
         public let title: String
         public let summary: String
@@ -95,7 +95,7 @@ extension Post {
         }
     }
 
-    public struct Metadata: Decodable, Equatable, Identifiable, PostInformation {
+    public struct Metadata: Decodable, Equatable, Identifiable, Sendable, PostInformation {
         public let id: PostID
         public let title: String
         public let summary: String
@@ -113,7 +113,7 @@ extension Post {
         }
     }
 
-    public struct Tag: Decodable, Identifiable, Equatable, Hashable {
+    public struct Tag: Decodable, Sendable, Identifiable, Equatable, Hashable {
         public let id: TagID
         public let name: String
 
@@ -123,7 +123,7 @@ extension Post {
         }
     }
 
-    public struct SocialInfo: Decodable, Equatable, Likable {
+    public struct SocialInfo: Decodable, Equatable, Sendable, Likable {
         public let likeCount: Int
         public var isLiked: Bool
         public let comments: [Comment]
@@ -137,7 +137,7 @@ extension Post {
         }
     }
 
-    public struct Comment: Decodable, Identifiable, Equatable {
+    public struct Comment: Decodable, Sendable, Identifiable, Equatable {
         public let id: CommentID
         public let content: String
         public let author: Author
@@ -153,7 +153,7 @@ extension Post {
 }
 
 extension Post.Comment {
-    public struct Author: Decodable, Identifiable, Equatable {
+    public struct Author: Decodable, Sendable, Identifiable, Equatable {
         public let id: AuthorID
         public let firstName: String
         public let lastName: String
@@ -167,7 +167,7 @@ extension Post.Comment {
         }
     }
 
-    public struct SocialInfo: Decodable, Equatable, Likable {
+    public struct SocialInfo: Decodable, Sendable, Equatable, Likable {
         public let likeCount: Int
         public var isLiked: Bool
 
