@@ -1,7 +1,16 @@
+import Foundation
 import SwiftUI
 import Models
 
+enum CurrentUser {
+    static let name = "Crafting Swift"
+    static let id = UUID(uuidString: "1ab6bc51-27be-4e12-b086-ae926bdff421")!
+    static let photoURL = URL(string: "https://i.pravatar.cc/150?img=17")!
+}
+
 public struct DemoContainer: View {
+    @State private var isShowingUserProfile = false
+
     public init() {}
 
     public var body: some View {
@@ -10,6 +19,9 @@ public struct DemoContainer: View {
                 NavigationStack {
                     PostListScreen(useCase: .allPosts)
                         .postDestinations()
+                        .userProfileToolbar {
+                            isShowingUserProfile = true
+                        }
                 }
             }
 
@@ -17,9 +29,32 @@ public struct DemoContainer: View {
                 NavigationStack {
                     PostTagsGalleryScreen()
                         .postDestinations()
+                        .userProfileToolbar {
+                            isShowingUserProfile = true
+                        }
                 }
             }
         }
+        .sheet(isPresented: $isShowingUserProfile, content: {
+            NavigationStack {
+                VStack(alignment: .leading, spacing: 32) {
+                    VStack(alignment: .leading) {
+                        Text("Name")
+                        Text(CurrentUser.name)
+                    }
+
+                    VStack(alignment: .leading) {
+                        Text("ID")
+                        Text(CurrentUser.id.uuidString)
+                    }
+
+                    Spacer()
+                }
+                .padding()
+                .navigationTitle("Current User")
+            }
+            .presentationDetents([.medium])
+        })
     }
 }
 
@@ -37,6 +72,19 @@ extension View {
                 PostListScreen(useCase: .allPosts)
             case let .postsForTag(tag):
                 PostListScreen(useCase: .postForTag(tag))
+            }
+        }
+    }
+}
+
+private extension View {
+    func userProfileToolbar(showUserName: @escaping () -> Void) -> some View {
+        toolbar {
+            ToolbarItem(placement: .topBarTrailing) {
+                Button(action: showUserName) {
+                    Image(systemName: "person.crop.circle")
+                }
+                .accessibilityLabel("Show user name")
             }
         }
     }

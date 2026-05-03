@@ -14,7 +14,6 @@ struct NetworkClient {
     let fetchPostSummaries: () async throws -> [Post.Summary] // Pagination
     let fetchPost: (PostID) async throws -> Post
     let fetchTagsWithCounts: () async throws -> TagsWithCounts
-    let searchPosts: (String) async throws -> [Post.Summary] // Pagination
 
     let likePost: (PostID) async throws -> Void
     let unlikePost: (PostID) async throws -> Void
@@ -61,14 +60,6 @@ struct NetworkClient {
                     counts: testData.postByTagCount
                 )
             },
-            searchPosts: { query in
-                try await randomDelay()
-                return testData
-                    .posts
-                    .filter { $0.metadata.title.localizedCaseInsensitiveContains(query) }
-                    .map { Post.Summary(post: $0) }
-
-            },
             likePost: { _ in },
             unlikePost: { _ in },
             addComment: { _, _ in },
@@ -80,7 +71,6 @@ struct NetworkClient {
         fetchPostSummaries: @escaping () async throws -> [Post.Summary] = { fatalError("❌ not implemented") },
         fetchPost: @escaping (PostID) async throws -> Post = { _ in fatalError("❌ not implemented") },
         fetchTagsWithCounts: @escaping () async throws -> TagsWithCounts = { fatalError("❌ not implemented") },
-        searchPosts: @escaping (String) async throws -> [Post.Summary] = { _ in fatalError("❌ not implemented") },
         likePost: @escaping (PostID) async throws -> Void = { _ in fatalError("❌ not implemented") },
         unlikePost: @escaping (PostID) async throws -> Void = { _ in fatalError("❌ not implemented") },
         addComment: @escaping (PostID, String) async throws -> Void = { _,_ in fatalError("❌ not implemented") },
@@ -90,7 +80,6 @@ struct NetworkClient {
             fetchPostSummaries: fetchPostSummaries,
             fetchPost: fetchPost,
             fetchTagsWithCounts: fetchTagsWithCounts,
-            searchPosts: searchPosts,
             likePost: likePost,
             unlikePost: unlikePost,
             addComment: addComment,

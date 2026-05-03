@@ -81,7 +81,6 @@
 			);
 			fileSystemSynchronizedGroups = (
 				9B87D5822F8FFE690074DEFF /* PostListDetail */,
-				9B87D58E2F9001040074DEFF /* Packages */,
 			);
 			name = PostListDetail;
 			packageProductDependencies = (
@@ -119,6 +118,9 @@
 			productRefGroup = 9B87D5812F8FFE690074DEFF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
+			packageReferences = (
+				9B74E4662FA7D04E00512EB4 /* XCLocalSwiftPackageReference "PostUI" */,
+			);
 			targets = (
 				9B87D57F2F8FFE690074DEFF /* PostListDetail */,
 			);
@@ -376,9 +378,17 @@
 /* Begin XCSwiftPackageProductDependency section */
 		9B74E4642FA518F000512EB4 /* PostUI */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = 9B74E4662FA7D04E00512EB4 /* XCLocalSwiftPackageReference "PostUI" */;
 			productName = PostUI;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		9B74E4662FA7D04E00512EB4 /* XCLocalSwiftPackageReference "PostUI" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/PostUI;
+		};
+/* End XCLocalSwiftPackageReference section */
 	};
 	rootObject = 9B87D5782F8FFE690074DEFF /* Project object */;
 }
