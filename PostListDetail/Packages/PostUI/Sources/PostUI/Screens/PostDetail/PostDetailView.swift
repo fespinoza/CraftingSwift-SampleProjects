@@ -36,10 +36,11 @@ struct PostDetailView: View {
 
                     Divider()
 
-                    PostSocialStatsView(
-                        likeCount: post.socialInfo.likeCount,
-                        commentCount: post.socialInfo.commentCount
-                    )
+                    NewPostSocialStatsView(postID: post.id)
+//                    PostSocialStatsView(
+//                        likeCount: post.socialInfo.likeCount,
+//                        commentCount: post.socialInfo.commentCount
+//                    )
 
 //                    _AltInitialPostSocialActions(post: $post)
                     _ObservablePostSocialActionsView(postID: post.id)

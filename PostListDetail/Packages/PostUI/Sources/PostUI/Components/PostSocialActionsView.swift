@@ -276,7 +276,11 @@ class PostSocialLocator {
 @Observable
 class PostSocialState {
     let postId: PostID
-    var isLiked: Bool
+    var isLiked: Bool {
+        didSet {
+            likeCount += isLiked ? 1 : -1
+        }
+    }
     var likeCount: Int
     weak var container: PostSocialLocator?
 
@@ -291,8 +295,11 @@ class PostSocialState {
 
 /*
 
-- TODO: update the state when relevant network request are done
-- TODO: like count should update
-- 
+ - Add comments / remove comments
+
+
+ - Alternatives:
+    - SwiftData
+    - 
 
  */

@@ -1,8 +1,10 @@
 import SwiftUI
 import Models
 
-struct DemoContainer: View {
-    var body: some View {
+public struct DemoContainer: View {
+    public init() {}
+
+    public var body: some View {
         TabView {
             Tab("Posts", systemImage: "star") {
                 NavigationStack {

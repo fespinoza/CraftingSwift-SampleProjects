@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import PostUI
 
 @main
 struct PostListDetailApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DemoContainer()
         }
     }
 }
