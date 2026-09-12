@@ -36,3 +36,7 @@ A YAML-driven analytics event definition setup with a generator that produces st
 ### [UIKitNavigation](UIKitNavigation/README.md)
 
 UIKit examples for styling `UINavigationBar` with large titles, custom title views, segmented controls, and transparent scroll-edge appearances.
+
+### [DoneWhen](DoneWhen/README.md)
+
+Simple SwiftData + CloudKit app where I do "analytics for personal life"
